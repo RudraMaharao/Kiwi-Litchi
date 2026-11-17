@@ -1,0 +1,46 @@
+{
+  "synthetic": true,
+  "company": "Kiwi Linux Test",
+  "opening_paise": 0,
+  "closing_paise": 960000,
+  "masters": {
+    "Kiwi Test Bank": "Bank Accounts",
+    "Kiwi Test Capital": "Capital Account",
+    "Kiwi Test Expense": "Indirect Expenses",
+    "Kiwi Test Income": "Indirect Incomes"
+  },
+  "rows": [
+    {
+      "date": "2026-11-01",
+      "ledger": "Kiwi Test Capital",
+      "type": "Receipt",
+      "amount_paise": 1000000
+    },
+    {
+      "date": "2026-11-01",
+      "ledger": "Kiwi Test Expense",
+      "type": "Payment",
+      "amount_paise": 10000
+    },
+    {
+      "date": "2026-11-02",
+      "ledger": "Kiwi Test Income",
+      "type": "Receipt",
+      "amount_paise": 20000
+    },
+    {
+      "date": "2026-11-02",
+      "ledger": "Cash",
+      "type": "Contra",
+      "amount_paise": 50000
+    }
+  ],
+  "expected_closing_balances": {
+    "Kiwi Test Bank": "9600.00 Dr",
+    "Kiwi Test Capital": "10000.00 Cr",
+    "Kiwi Test Expense": "100.00 Dr",
+    "Kiwi Test Income": "200.00 Cr",
+    "Cash": "500.00 Dr"
+  },
+  "parser_verified": true
+}

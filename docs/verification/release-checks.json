@@ -1,0 +1,29 @@
+{
+  "package_name": "kiwi-litchi",
+  "verified_local_date": "2026-11-17",
+  "packaged_pytest": {
+    "name": "pytest",
+    "errors": "0",
+    "failures": "0",
+    "skipped": "0",
+    "tests": "214",
+    "time": "70.485",
+    "timestamp": "2026-11-17T00:34:17.463067+05:30"
+  },
+  "original_bahi_test_files_unchanged": 5,
+  "workflow_screenshots": 31,
+  "native_tally_screenshots": 9,
+  "portable_svg_maps": 2,
+  "markdown_links_broken": 0,
+  "forbidden_runtime_files": [],
+  "credential_pattern_matches": [],
+  "private_home_path_matches": [],
+  "native_screenshot_review": "All nine images visually inspected; disposable company only",
+  "public_upload_performed": false,
+  "remaining_gates": [
+    "Two-company routing not run",
+    "Native XML import selection screen only partially verified",
+    "Independent ML/legal/audit and representative overnight evaluations not completed"
+  ],
+  "all_seven_requested_native_stages_present": true
+}

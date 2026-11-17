@@ -1,0 +1,655 @@
+{
+  "data_root": "<data-dir>",
+  "synthetic_only": true,
+  "memory_samples": [
+    {
+      "seconds": 0.0,
+      "total_kib": 8016140,
+      "available_kib": 4974464,
+      "used_approx_kib": 3041676,
+      "swap_used_kib": 1171432
+    },
+    {
+      "seconds": 1.0,
+      "total_kib": 8016140,
+      "available_kib": 4688500,
+      "used_approx_kib": 3327640,
+      "swap_used_kib": 1171432
+    },
+    {
+      "seconds": 2.0,
+      "total_kib": 8016140,
+      "available_kib": 4855836,
+      "used_approx_kib": 3160304,
+      "swap_used_kib": 1171432
+    },
+    {
+      "seconds": 3.01,
+      "total_kib": 8016140,
+      "available_kib": 4693980,
+      "used_approx_kib": 3322160,
+      "swap_used_kib": 1171432
+    },
+    {
+      "seconds": 4.04,
+      "total_kib": 8016140,
+      "available_kib": 4438148,
+      "used_approx_kib": 3577992,
+      "swap_used_kib": 1171428
+    },
+    {
+      "seconds": 5.06,
+      "total_kib": 8016140,
+      "available_kib": 3885900,
+      "used_approx_kib": 4130240,
+      "swap_used_kib": 1171424
+    },
+    {
+      "seconds": 6.06,
+      "total_kib": 8016140,
+      "available_kib": 3876944,
+      "used_approx_kib": 4139196,
+      "swap_used_kib": 1171424
+    },
+    {
+      "seconds": 7.07,
+      "total_kib": 8016140,
+      "available_kib": 3873440,
+      "used_approx_kib": 4142700,
+      "swap_used_kib": 1171424
+    },
+    {
+      "seconds": 8.07,
+      "total_kib": 8016140,
+      "available_kib": 3858964,
+      "used_approx_kib": 4157176,
+      "swap_used_kib": 1171424
+    },
+    {
+      "seconds": 9.07,
+      "total_kib": 8016140,
+      "available_kib": 3843404,
+      "used_approx_kib": 4172736,
+      "swap_used_kib": 1171424
+    },
+    {
+      "seconds": 10.07,
+      "total_kib": 8016140,
+      "available_kib": 3838672,
+      "used_approx_kib": 4177468,
+      "swap_used_kib": 1171420
+    },
+    {
+      "seconds": 11.07,
+      "total_kib": 8016140,
+      "available_kib": 3840448,
+      "used_approx_kib": 4175692,
+      "swap_used_kib": 1171420
+    },
+    {
+      "seconds": 12.07,
+      "total_kib": 8016140,
+      "available_kib": 3844372,
+      "used_approx_kib": 4171768,
+      "swap_used_kib": 1171420
+    },
+    {
+      "seconds": 13.07,
+      "total_kib": 8016140,
+      "available_kib": 3838136,
+      "used_approx_kib": 4178004,
+      "swap_used_kib": 1171420
+    },
+    {
+      "seconds": 14.07,
+      "total_kib": 8016140,
+      "available_kib": 3839744,
+      "used_approx_kib": 4176396,
+      "swap_used_kib": 1171412
+    },
+    {
+      "seconds": 15.08,
+      "total_kib": 8016140,
+      "available_kib": 3840776,
+      "used_approx_kib": 4175364,
+      "swap_used_kib": 1171412
+    },
+    {
+      "seconds": 16.08,
+      "total_kib": 8016140,
+      "available_kib": 3857164,
+      "used_approx_kib": 4158976,
+      "swap_used_kib": 1171412
+    },
+    {
+      "seconds": 17.08,
+      "total_kib": 8016140,
+      "available_kib": 3856324,
+      "used_approx_kib": 4159816,
+      "swap_used_kib": 1171412
+    },
+    {
+      "seconds": 18.08,
+      "total_kib": 8016140,
+      "available_kib": 3856232,
+      "used_approx_kib": 4159908,
+      "swap_used_kib": 1171412
+    },
+    {
+      "seconds": 19.08,
+      "total_kib": 8016140,
+      "available_kib": 3857272,
+      "used_approx_kib": 4158868,
+      "swap_used_kib": 1171408
+    },
+    {
+      "seconds": 20.08,
+      "total_kib": 8016140,
+      "available_kib": 3859852,
+      "used_approx_kib": 4156288,
+      "swap_used_kib": 1171408
+    },
+    {
+      "seconds": 21.08,
+      "total_kib": 8016140,
+      "available_kib": 4883768,
+      "used_approx_kib": 3132372,
+      "swap_used_kib": 1171408
+    },
+    {
+      "seconds": 22.08,
+      "total_kib": 8016140,
+      "available_kib": 4596956,
+      "used_approx_kib": 3419184,
+      "swap_used_kib": 1171404
+    },
+    {
+      "seconds": 23.08,
+      "total_kib": 8016140,
+      "available_kib": 4598320,
+      "used_approx_kib": 3417820,
+      "swap_used_kib": 1171404
+    },
+    {
+      "seconds": 24.08,
+      "total_kib": 8016140,
+      "available_kib": 4602508,
+      "used_approx_kib": 3413632,
+      "swap_used_kib": 1171396
+    },
+    {
+      "seconds": 25.08,
+      "total_kib": 8016140,
+      "available_kib": 4590816,
+      "used_approx_kib": 3425324,
+      "swap_used_kib": 1171392
+    },
+    {
+      "seconds": 26.08,
+      "total_kib": 8016140,
+      "available_kib": 4587604,
+      "used_approx_kib": 3428536,
+      "swap_used_kib": 1171388
+    },
+    {
+      "seconds": 27.09,
+      "total_kib": 8016140,
+      "available_kib": 4588300,
+      "used_approx_kib": 3427840,
+      "swap_used_kib": 1171388
+    }
+  ],
+  "seed": {
+    "note": "Demo client already exists; left unchanged"
+  },
+  "synthetic_vouchers": 39,
+  "embed": {
+    "embedded": 0,
+    "cached": 39,
+    "model": "nomic-embed-text@0a109f422b47e3a30ba2b10eca18548e944e8a23073ee3f3e947efcf3c45e59f"
+  },
+  "loaded_embedding_model": {
+    "models": []
+  },
+  "prediction": {
+    "suggestions": [
+      {
+        "ledger": "Mehta Hardware",
+        "vote_share": 1.0
+      }
+    ],
+    "neighbours": [
+      {
+        "id": 1,
+        "ledger": "Mehta Hardware",
+        "day": "2025-10-10",
+        "similarity": 0.959076214581728
+      },
+      {
+        "id": 7,
+        "ledger": "Mehta Hardware",
+        "day": "2025-11-10",
+        "similarity": 0.959076214581728
+      },
+      {
+        "id": 13,
+        "ledger": "Mehta Hardware",
+        "day": "2025-12-10",
+        "similarity": 0.959076214581728
+      },
+      {
+        "id": 19,
+        "ledger": "Mehta Hardware",
+        "day": "2026-01-10",
+        "similarity": 0.959076214581728
+      },
+      {
+        "id": 25,
+        "ledger": "Mehta Hardware",
+        "day": "2026-02-10",
+        "similarity": 0.959076214581728
+      },
+      {
+        "id": 31,
+        "ledger": "Mehta Hardware",
+        "day": "2026-03-10",
+        "similarity": 0.959076214581728
+      },
+      {
+        "id": 37,
+        "ledger": "Mehta Hardware",
+        "day": "2026-04-10",
+        "similarity": 0.959076214581728
+      },
+      {
+        "id": 43,
+        "ledger": "Mehta Hardware",
+        "day": "2026-05-10",
+        "similarity": 0.959076214581728
+      },
+      {
+        "id": 49,
+        "ledger": "Mehta Hardware",
+        "day": "2026-06-10",
+        "similarity": 0.959076214581728
+      },
+      {
+        "id": 55,
+        "ledger": "Mehta Hardware",
+        "day": "2026-07-10",
+        "similarity": 0.959076214581728
+      }
+    ],
+    "requires_review": true,
+    "calibrated_ready_recommendation": false,
+    "note": "Vote share is not calibrated probability. No automatic approval."
+  },
+  "prediction_seconds": 0.95,
+  "books": {
+    "intent": {
+      "ledger": "Mehta Hardware",
+      "measure": "payments",
+      "start": "2026-04-01",
+      "end": "2027-03-31"
+    },
+    "total_paise": 1750000,
+    "total_rupees": "17500.00",
+    "vouchers": [
+      {
+        "voucher": "tally:demo-6-0",
+        "day": "2026-04-10",
+        "narration": "UPI/Mehta Hardware/mehta@ybl/123456789012",
+        "amount_paise": 250000
+      },
+      {
+        "voucher": "tally:demo-7-0",
+        "day": "2026-05-10",
+        "narration": "UPI/Mehta Hardware/mehta@ybl/123456789012",
+        "amount_paise": 250000
+      },
+      {
+        "voucher": "tally:demo-8-0",
+        "day": "2026-06-10",
+        "narration": "UPI/Mehta Hardware/mehta@ybl/123456789012",
+        "amount_paise": 250000
+      },
+      {
+        "voucher": "tally:demo-9-0",
+        "day": "2026-07-10",
+        "narration": "UPI/Mehta Hardware/mehta@ybl/123456789012",
+        "amount_paise": 250000
+      },
+      {
+        "voucher": "tally:demo-10-0",
+        "day": "2026-08-10",
+        "narration": "UPI/Mehta Hardware/mehta@ybl/123456789012",
+        "amount_paise": 250000
+      },
+      {
+        "voucher": "tally:demo-11-0",
+        "day": "2026-09-10",
+        "narration": "UPI/Mehta Hardware/mehta@ybl/123456789012",
+        "amount_paise": 250000
+      },
+      {
+        "voucher": "tally:demo-12-0",
+        "day": "2026-10-10",
+        "narration": "UPI/Mehta Hardware/mehta@ybl/123456789012",
+        "amount_paise": 250000
+      }
+    ],
+    "scope": "Imported Payment vouchers only; unposted statements, journals and other voucher types are excluded."
+  },
+  "model_intent": {
+    "ledger": "Mehta Hardware",
+    "measure": "payments",
+    "start": "2026-04-01",
+    "end": "2027-03-31"
+  },
+  "batch": {
+    "seconds": 6.674,
+    "clients": [
+      {
+        "client": "demo",
+        "started": "2026-10-30T16:34:11.038023+00:00",
+        "embeddings": {
+          "embedded": 0,
+          "cached": 39,
+          "model": "nomic-embed-text@0a109f422b47e3a30ba2b10eca18548e944e8a23073ee3f3e947efcf3c45e59f"
+        },
+        "kiwi_predictions": 0,
+        "review": {
+          "client": "demo",
+          "flags": [
+            {
+              "type": "review",
+              "voucher": "tally:demo-0-1",
+              "reason": "Round amount; informational only"
+            },
+            {
+              "type": "review",
+              "voucher": "tally:demo-1-1",
+              "reason": "Round amount; informational only"
+            },
+            {
+              "type": "review",
+              "voucher": "tally:demo-2-1",
+              "reason": "Round amount; informational only"
+            },
+            {
+              "type": "review",
+              "voucher": "tally:demo-3-0",
+              "reason": "Weekend/configured holiday; informational only"
+            },
+            {
+              "type": "review",
+              "voucher": "tally:demo-3-1",
+              "reason": "Round amount; informational only"
+            },
+            {
+              "type": "review",
+              "voucher": "tally:demo-3-1",
+              "reason": "Weekend/configured holiday; informational only"
+            },
+            {
+              "type": "review",
+              "voucher": "tally:demo-4-1",
+              "reason": "Round amount; informational only"
+            },
+            {
+              "type": "review",
+              "voucher": "tally:demo-5-1",
+              "reason": "Round amount; informational only"
+            },
+            {
+              "type": "review",
+              "voucher": "tally:demo-6-1",
+              "reason": "Round amount; informational only"
+            },
+            {
+              "type": "review",
+              "voucher": "tally:demo-7-0",
+              "reason": "Weekend/configured holiday; informational only"
+            },
+            {
+              "type": "review",
+              "voucher": "tally:demo-7-1",
+              "reason": "Round amount; informational only"
+            },
+            {
+              "type": "review",
+              "voucher": "tally:demo-7-1",
+              "reason": "Weekend/configured holiday; informational only"
+            },
+            {
+              "type": "review",
+              "voucher": "tally:demo-8-1",
+              "reason": "Round amount; informational only"
+            },
+            {
+              "type": "review",
+              "voucher": "tally:demo-9-1",
+              "reason": "Round amount; informational only"
+            },
+            {
+              "type": "review",
+              "voucher": "tally:demo-10-1",
+              "reason": "Round amount; informational only"
+            },
+            {
+              "type": "review",
+              "voucher": "tally:demo-11-1",
+              "reason": "Round amount; informational only"
+            },
+            {
+              "type": "review",
+              "voucher": "tally:demo-12-0",
+              "reason": "Weekend/configured holiday; informational only"
+            },
+            {
+              "type": "review",
+              "voucher": "tally:demo-12-1",
+              "reason": "Round amount; informational only"
+            },
+            {
+              "type": "review",
+              "voucher": "tally:demo-12-1",
+              "reason": "Weekend/configured holiday; informational only"
+            }
+          ],
+          "anomalies": [],
+          "skipped": [
+            "Cash legal threshold not configured with a verified source",
+            "TDS rules not configured by a CA"
+          ],
+          "note": "Review prompts, not findings of fraud or tax noncompliance."
+        },
+        "seconds": 0.211,
+        "finished": "2026-10-30T16:34:11.249338+00:00",
+        "python_peak_mb": 42.2,
+        "memory_note": "Python peak only. Ollama and Docker memory must be checked separately."
+      },
+      {
+        "client": "kiwi-1",
+        "started": "2026-10-30T16:34:11.250432+00:00",
+        "embeddings": {
+          "embedded": 0,
+          "cached": 0,
+          "model": "nomic-embed-text@0a109f422b47e3a30ba2b10eca18548e944e8a23073ee3f3e947efcf3c45e59f"
+        },
+        "kiwi_predictions": 16,
+        "review": {
+          "client": "kiwi-1",
+          "flags": [],
+          "anomalies": [],
+          "skipped": [
+            "Cash legal threshold not configured with a verified source",
+            "TDS rules not configured by a CA"
+          ],
+          "note": "Review prompts, not findings of fraud or tax noncompliance."
+        },
+        "seconds": 6.429,
+        "finished": "2026-10-30T16:34:17.679689+00:00",
+        "python_peak_mb": 48.6,
+        "memory_note": "Python peak only. Ollama and Docker memory must be checked separately."
+      }
+    ],
+    "errors": []
+  },
+  "original_kiwi_demo_statuses": {
+    "ready": 31,
+    "review": 16
+  },
+  "restore": {
+    "passed": true,
+    "backup": "<data-dir>/backups/20261030-220417-23fff4",
+    "fresh_directory": "<workspace>/work/kiwi-restore-ywpwpl86",
+    "all_table_contents_match": true,
+    "databases": {
+      "clients/demo/books.sqlite3": {
+        "meta": {
+          "rows": 2,
+          "sha256": "6c4a0c846e79ab972bcd4c816e143e53f769f5d2874de1b6cd4eaa06822270e7"
+        },
+        "ledgers": {
+          "rows": 6,
+          "sha256": "af8018cbfa02a021bb5a8f3910739a1ab1cc291351408ccf9365f302a4eff116"
+        },
+        "rules": {
+          "rows": 3,
+          "sha256": "6e1c990dec8e8d1b6a5164c082b322b31fa2f0e67dda664a8c77a0e26ea1f498"
+        },
+        "memory": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "statements": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "entries": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "batches": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "vouchers": {
+          "rows": 39,
+          "sha256": "422a12612a0c76d3c9ba5af15b5895d8769f2f0f42ce1c615bcd9dfc1d098285"
+        },
+        "lines": {
+          "rows": 78,
+          "sha256": "30812a618aa3b586c74f6cbe44a3172143aead3a3b6009b1bff3f4d9603b9f40"
+        },
+        "embeddings": {
+          "rows": 39,
+          "sha256": "373d42f1a2e10f1e632b668a611f1cb8d03ba0405a244c741c239d09128d30e2"
+        },
+        "events": {
+          "rows": 1,
+          "sha256": "bb25de2c5a5052ba917854fe9db787b8b2f030673eb4df42a9399948a0489703"
+        },
+        "kiwi_predictions": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      "clients/kiwi-1/books.sqlite3": {
+        "meta": {
+          "rows": 2,
+          "sha256": "6c4a0c846e79ab972bcd4c816e143e53f769f5d2874de1b6cd4eaa06822270e7"
+        },
+        "ledgers": {
+          "rows": 24,
+          "sha256": "2093ec2b26fe5922243f9b269d0ed0196ec9d1ac4fd5aa8e35e04a0f936f9760"
+        },
+        "rules": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "memory": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "statements": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "entries": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "batches": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "vouchers": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "lines": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "embeddings": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "events": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "kiwi_predictions": {
+          "rows": 16,
+          "sha256": "4cf766d6ae27be08918e44ac169ffb33ef9feed9d24ee6edecfa78ea3ef6c865"
+        }
+      },
+      "kiwi/data/bahi.db": {
+        "clients": {
+          "rows": 1,
+          "sha256": "5dd2bfd185560718aa66fa029f7c8408672fbb1c5fa115e1eedbb6fae11e53fb"
+        },
+        "accounts": {
+          "rows": 2,
+          "sha256": "02fdac269cbfd068db5edb045247d86e36ab750734728d9424f46192967dce11"
+        },
+        "statements": {
+          "rows": 1,
+          "sha256": "82f310805f4999def0e276a0f6fce8d72be97655bc8d179a58f2a2e8393cc68f"
+        },
+        "txns": {
+          "rows": 47,
+          "sha256": "8f2802890c8a615547964eb1bb3de754a6eb66e5d0f77c1c48c8cbc2046d277f"
+        },
+        "ledgers": {
+          "rows": 24,
+          "sha256": "9f9678e125568012ddd463c9dcb71f833137e2b85f3bf1574f929e1a7c5badc0"
+        },
+        "rules": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "memory": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "batches": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "meta": {
+          "rows": 1,
+          "sha256": "ee23898fb4a85534d6793aa58969c862343fb9101a2ffd0682a52916a9ca6302"
+        }
+      }
+    },
+    "live_password_preserved": true,
+    "password_not_restored": true
+  },
+  "passed": true,
+  "seconds": 27.688,
+  "python_peak_mib": 48.6,
+  "memory_note": "System samples include other processes; small synthetic run only, not an overnight acceptance test."
+}

@@ -1,0 +1,417 @@
+{
+ "opening": 12345678,
+ "closing": 22388022,
+ "rows": [
+  {
+   "date": "2026-04-01",
+   "value_date": "2026-04-01",
+   "narration": "BY TRANSFER-UPI/CR/017320865255/KRISHNA ENTERPRISES/YESB/krishnaent@paytm/UPI--",
+   "ref": "",
+   "amount": 1614600,
+   "direction": "credit",
+   "balance": 13960278,
+   "kind": "upi_in"
+  },
+  {
+   "date": "2026-04-01",
+   "value_date": "2026-04-01",
+   "narration": "TO TRANSFER-INB NEFT/N823103612970/AMBIKA STEEL PVT LTD/UTIB0000123--",
+   "ref": "",
+   "amount": 1769200,
+   "direction": "debit",
+   "balance": 12191078,
+   "kind": "neft_out"
+  },
+  {
+   "date": "2026-04-02",
+   "value_date": "2026-04-02",
+   "narration": "TO TRANSFER-INB IMPS/P2A/294771519410/XXXXXXX9192/SURESH KUMAR--",
+   "ref": "",
+   "amount": 2418700,
+   "direction": "debit",
+   "balance": 9772378,
+   "kind": "imps_out"
+  },
+  {
+   "date": "2026-04-02",
+   "value_date": "2026-04-02",
+   "narration": "BY TRANSFER-NEFT*ICIC0000234*ICICN12964201351384*MEHTA AND SONS--",
+   "ref": "",
+   "amount": 3179000,
+   "direction": "credit",
+   "balance": 12951378,
+   "kind": "neft_in"
+  },
+  {
+   "date": "2026-04-03",
+   "value_date": "2026-04-03",
+   "narration": "TO TRANSFER-UPI/DR/197936518203/BHARAT PETROLEUM/UTIB/bpclfuel@icici/Pay--",
+   "ref": "",
+   "amount": 79335,
+   "direction": "debit",
+   "balance": 12872043,
+   "kind": "upi_out"
+  },
+  {
+   "date": "2026-04-04",
+   "value_date": "2026-04-04",
+   "narration": "CASH DEPOSIT-CASH DEPOSIT SELF--",
+   "ref": "",
+   "amount": 4593300,
+   "direction": "credit",
+   "balance": 17465343,
+   "kind": "cash_dep"
+  },
+  {
+   "date": "2026-04-04",
+   "value_date": "2026-04-05",
+   "narration": "TO TRANSFER-INB NEFT/N606743314192/JAIN HARDWARE STORES/ICIC0006612--",
+   "ref": "",
+   "amount": 6126800,
+   "direction": "debit",
+   "balance": 11338543,
+   "kind": "neft_out"
+  },
+  {
+   "date": "2026-04-05",
+   "value_date": "2026-04-06",
+   "narration": "TO TRANSFER-INB Funds Transfer to A/c XXXXXX7766--",
+   "ref": "",
+   "amount": 6679000,
+   "direction": "debit",
+   "balance": 4659543,
+   "kind": "self_out"
+  },
+  {
+   "date": "2026-04-06",
+   "value_date": "2026-04-06",
+   "narration": "TO TRANSFER-UPI/DR/129854843448/SURESH KUMAR/SBIN/suresh.k@oksbi/Pay--",
+   "ref": "",
+   "amount": 17540,
+   "direction": "debit",
+   "balance": 4642003,
+   "kind": "upi_out"
+  },
+  {
+   "date": "2026-04-06",
+   "value_date": "2026-04-06",
+   "narration": "BY TRANSFER-NEFT*KKBK0001207*KKBKN77283765168321*KRISHNA ENTERPRISES--",
+   "ref": "",
+   "amount": 22316200,
+   "direction": "credit",
+   "balance": 26958203,
+   "kind": "neft_in"
+  },
+  {
+   "date": "2026-04-06",
+   "value_date": "2026-04-07",
+   "narration": "BY TRANSFER-NEFT*ICIC0000234*ICICN30882385908501*MEHTA AND SONS--",
+   "ref": "",
+   "amount": 11453700,
+   "direction": "credit",
+   "balance": 38411903,
+   "kind": "neft_in"
+  },
+  {
+   "date": "2026-04-07",
+   "value_date": "2026-04-07",
+   "narration": "TO TRANSFER-UPI/DR/191248456998/RAHUL VERMA/YESB/rahulv@okicici/Pay--",
+   "ref": "",
+   "amount": 61949,
+   "direction": "debit",
+   "balance": 38349954,
+   "kind": "upi_out"
+  },
+  {
+   "date": "2026-04-08",
+   "value_date": "2026-04-09",
+   "narration": "DEBIT-SMS CHARGES--",
+   "ref": "",
+   "amount": 3739,
+   "direction": "debit",
+   "balance": 38346215,
+   "kind": "charges"
+  },
+  {
+   "date": "2026-04-08",
+   "value_date": "2026-04-08",
+   "narration": "BY TRANSFER-UPI/CR/854033015405/SHREE GANESH TRADERS/HDFC/shreeganesh@ybl/UPI--",
+   "ref": "",
+   "amount": 392400,
+   "direction": "credit",
+   "balance": 38738615,
+   "kind": "upi_in"
+  },
+  {
+   "date": "2026-04-09",
+   "value_date": "2026-04-10",
+   "narration": "TO TRANSFER-INB IMPS/P2A/227466526438/XXXXXXX7139/PRIYA NAIR--",
+   "ref": "",
+   "amount": 1558600,
+   "direction": "debit",
+   "balance": 37180015,
+   "kind": "imps_out"
+  },
+  {
+   "date": "2026-04-09",
+   "value_date": "2026-04-09",
+   "narration": "BY TRANSFER-UPI/CR/883123482704/MEHTA AND SONS/SBIN/mehtasons@oksbi/UPI--",
+   "ref": "",
+   "amount": 3092700,
+   "direction": "credit",
+   "balance": 40272715,
+   "kind": "upi_in"
+  },
+  {
+   "date": "2026-04-10",
+   "value_date": "2026-04-10",
+   "narration": "TO CLEARING-CHQ 442285 JAIN HARDWARE STORES--",
+   "ref": "442285",
+   "amount": 1985300,
+   "direction": "debit",
+   "balance": 38287415,
+   "kind": "chq_out"
+  },
+  {
+   "date": "2026-04-11",
+   "value_date": "2026-04-11",
+   "narration": "BY TRANSFER-NEFT*UTIB0000917*UTIBN15362976806775*PATIL CONSTRUCTIONS PVT LTD--",
+   "ref": "",
+   "amount": 14724800,
+   "direction": "credit",
+   "balance": 53012215,
+   "kind": "neft_in"
+  },
+  {
+   "date": "2026-04-12",
+   "value_date": "2026-04-12",
+   "narration": "TO TRANSFER-INB Funds Transfer to A/c XXXXXX7766--",
+   "ref": "",
+   "amount": 2633000,
+   "direction": "debit",
+   "balance": 50379215,
+   "kind": "self_out"
+  },
+  {
+   "date": "2026-04-14",
+   "value_date": "2026-04-15",
+   "narration": "TO TRANSFER-INB NEFT/N786433384490/JAIN HARDWARE STORES/ICIC0006612--",
+   "ref": "",
+   "amount": 5386000,
+   "direction": "debit",
+   "balance": 44993215,
+   "kind": "neft_out"
+  },
+  {
+   "date": "2026-04-14",
+   "value_date": "2026-04-14",
+   "narration": "TO CLEARING-CHQ 471779 BALAJI PACKAGING--",
+   "ref": "471779",
+   "amount": 8506300,
+   "direction": "debit",
+   "balance": 36486915,
+   "kind": "chq_out"
+  },
+  {
+   "date": "2026-04-15",
+   "value_date": "2026-04-16",
+   "narration": "CASH DEPOSIT-CASH DEPOSIT SELF--",
+   "ref": "",
+   "amount": 2942500,
+   "direction": "credit",
+   "balance": 39429415,
+   "kind": "cash_dep"
+  },
+  {
+   "date": "2026-04-17",
+   "value_date": "2026-04-17",
+   "narration": "TO TRANSFER-UPI/DR/565220898412/AMAZON PAY/YESB/amazonpay@apl/Pay--",
+   "ref": "",
+   "amount": 137357,
+   "direction": "debit",
+   "balance": 39292058,
+   "kind": "upi_out"
+  },
+  {
+   "date": "2026-04-18",
+   "value_date": "2026-04-18",
+   "narration": "TO TRANSFER-INB NEFT/N215840027527/JAIN HARDWARE STORES/ICIC0006612--",
+   "ref": "",
+   "amount": 6911300,
+   "direction": "debit",
+   "balance": 32380758,
+   "kind": "neft_out"
+  },
+  {
+   "date": "2026-04-19",
+   "value_date": "2026-04-19",
+   "narration": "ATM WDL-ATM CASH 7075 ANDHERI EAST MUMBAI-",
+   "ref": "",
+   "amount": 450000,
+   "direction": "debit",
+   "balance": 31930758,
+   "kind": "atm"
+  },
+  {
+   "date": "2026-04-19",
+   "value_date": "2026-04-19",
+   "narration": "CASH DEPOSIT-CASH DEPOSIT SELF--",
+   "ref": "",
+   "amount": 1677600,
+   "direction": "credit",
+   "balance": 33608358,
+   "kind": "cash_dep"
+  },
+  {
+   "date": "2026-04-19",
+   "value_date": "2026-04-19",
+   "narration": "BY TRANSFER-UPI/CR/915108865613/GUPTA ELECTRICALS/UTIB/guptaelec@okhdfcbank/UPI--",
+   "ref": "",
+   "amount": 4228300,
+   "direction": "credit",
+   "balance": 37836658,
+   "kind": "upi_in"
+  },
+  {
+   "date": "2026-04-19",
+   "value_date": "2026-04-19",
+   "narration": "TO TRANSFER-INB NEFT/N984256810581/OM SAI TRANSPORT/HDFC0000045--",
+   "ref": "",
+   "amount": 15726100,
+   "direction": "debit",
+   "balance": 22110558,
+   "kind": "neft_out"
+  },
+  {
+   "date": "2026-04-20",
+   "value_date": "2026-04-20",
+   "narration": "DEBIT-SMS CHARGES--",
+   "ref": "",
+   "amount": 1203,
+   "direction": "debit",
+   "balance": 22109355,
+   "kind": "charges"
+  },
+  {
+   "date": "2026-04-20",
+   "value_date": "2026-04-20",
+   "narration": "DEBIT-SMS CHARGES--",
+   "ref": "",
+   "amount": 4252,
+   "direction": "debit",
+   "balance": 22105103,
+   "kind": "charges"
+  },
+  {
+   "date": "2026-04-21",
+   "value_date": "2026-04-21",
+   "narration": "BY TRANSFER-UPI/CR/076341982410/R K DISTRIBUTORS/UTIB/rkdist@okaxis/UPI--",
+   "ref": "",
+   "amount": 2412800,
+   "direction": "credit",
+   "balance": 24517903,
+   "kind": "upi_in"
+  },
+  {
+   "date": "2026-04-22",
+   "value_date": "2026-04-22",
+   "narration": "BY TRANSFER-UPI/CR/273210134674/KRISHNA ENTERPRISES/ICIC/krishnaent@paytm/UPI--",
+   "ref": "",
+   "amount": 2117900,
+   "direction": "credit",
+   "balance": 26635803,
+   "kind": "upi_in"
+  },
+  {
+   "date": "2026-04-23",
+   "value_date": "2026-04-23",
+   "narration": "TO TRANSFER-ACH/BAJAJ FINANCE LTD/EMI--",
+   "ref": "",
+   "amount": 1250000,
+   "direction": "debit",
+   "balance": 25385803,
+   "kind": "emi"
+  },
+  {
+   "date": "2026-04-23",
+   "value_date": "2026-04-23",
+   "narration": "TO TRANSFER-INB IMPS/P2A/418732366214/XXXXXXX1176/PRIYA NAIR--",
+   "ref": "",
+   "amount": 983600,
+   "direction": "debit",
+   "balance": 24402203,
+   "kind": "imps_out"
+  },
+  {
+   "date": "2026-04-24",
+   "value_date": "2026-04-24",
+   "narration": "TO TRANSFER-UPI/DR/730324007185/RELIANCE RETAIL/SBIN/relianceretail@ybl/Pay--",
+   "ref": "",
+   "amount": 490193,
+   "direction": "debit",
+   "balance": 23912010,
+   "kind": "upi_out"
+  },
+  {
+   "date": "2026-04-24",
+   "value_date": "2026-04-25",
+   "narration": "DEBIT-SMS CHARGES--",
+   "ref": "",
+   "amount": 2971,
+   "direction": "debit",
+   "balance": 23909039,
+   "kind": "charges"
+  },
+  {
+   "date": "2026-04-24",
+   "value_date": "2026-04-24",
+   "narration": "CASH DEPOSIT-CASH DEPOSIT SELF--",
+   "ref": "",
+   "amount": 3216000,
+   "direction": "credit",
+   "balance": 27125039,
+   "kind": "cash_dep"
+  },
+  {
+   "date": "2026-04-25",
+   "value_date": "2026-04-25",
+   "narration": "BY TRANSFER-UPI/CR/976152421435/SHREE GANESH TRADERS/ICIC/shreeganesh@ybl/UPI--",
+   "ref": "",
+   "amount": 1747200,
+   "direction": "credit",
+   "balance": 28872239,
+   "kind": "upi_in"
+  },
+  {
+   "date": "2026-04-26",
+   "value_date": "2026-04-26",
+   "narration": "TO TRANSFER-UPI/DR/683332254213/BHARAT PETROLEUM/HDFC/bpclfuel@icici/Pay--",
+   "ref": "",
+   "amount": 296938,
+   "direction": "debit",
+   "balance": 28575301,
+   "kind": "upi_out"
+  },
+  {
+   "date": "2026-04-28",
+   "value_date": "2026-04-28",
+   "narration": "TO TRANSFER-INB Funds Transfer to A/c XXXXXX7766--",
+   "ref": "",
+   "amount": 6344100,
+   "direction": "debit",
+   "balance": 22231201,
+   "kind": "self_out"
+  },
+  {
+   "date": "2026-04-29",
+   "value_date": "2026-04-29",
+   "narration": "CREDIT INTEREST--",
+   "ref": "",
+   "amount": 156821,
+   "direction": "credit",
+   "balance": 22388022,
+   "kind": "interest"
+  }
+ ],
+ "password": "sharma123"
+}

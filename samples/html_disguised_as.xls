@@ -1,0 +1,52 @@
+<html><body><table>
+<tr><td>SAMPLE BANK - synthetic statement</td></tr>
+<tr><td>Account Number</td><td>50100012345678</td></tr>
+<tr><th>Txn Date</th><th>Value Date</th><th>Description</th><th>Ref No./Cheque No.</th><th>Debit</th><th>Credit</th><th>Balance</th></tr>
+<tr><td>01 Apr 2026</td><td>01 Apr 2026</td><td>UPI-SHREE GANESH TRADERS-shreeganesh@ybl-UTIB0000123-100772837832-PAYMENT FROM PHONE</td><td>100772837832</td><td></td><td>9,320.00</td><td>2,54,630.55</td></tr>
+<tr><td>02 Apr 2026</td><td>02 Apr 2026</td><td>GST PAYMENT CPIN 66304940326991 CBIC</td><td></td><td>15,635.00</td><td></td><td>2,38,995.55</td></tr>
+<tr><td>02 Apr 2026</td><td>02 Apr 2026</td><td>NEFT DR-SBIN0007721-BALAJI PACKAGING-NETBANK, MUM-N740954611139-INV 751</td><td>N740954611139</td><td>46,367.00</td><td></td><td>1,92,628.55</td></tr>
+<tr><td>02 Apr 2026</td><td>02 Apr 2026</td><td>ACH D- BAJAJ FINANCE LTD-CITI0000000123</td><td></td><td>12,500.00</td><td></td><td>1,80,128.55</td></tr>
+<tr><td>03 Apr 2026</td><td>03 Apr 2026</td><td>UPI-AMAZON PAY-amazonpay@apl-SBIN0000456-979262243933-PAY</td><td>979262243933</td><td>3,977.59</td><td></td><td>1,76,150.96</td></tr>
+<tr><td>03 Apr 2026</td><td>03 Apr 2026</td><td>NEFT CR-SBIN0004431-SHREE GANESH TRADERS-SHARMA TRADERS-SBINN67916011084364</td><td>SBINN67916011084364</td><td></td><td>1,60,209.00</td><td>3,36,359.96</td></tr>
+<tr><td>04 Apr 2026</td><td>04 Apr 2026</td><td>NEFT DR-ICIC0006612-JAIN HARDWARE STORES-NETBANK, MUM-N482123789914-INV 317</td><td>N482123789914</td><td>1,64,360.00</td><td></td><td>1,71,999.96</td></tr>
+<tr><td>05 Apr 2026</td><td>05 Apr 2026</td><td>IMPS-014673002458-AJAY SINGH-HDFC-XXXXXXXX4411-SALARY</td><td></td><td>21,341.00</td><td></td><td>1,50,658.96</td></tr>
+<tr><td>06 Apr 2026</td><td>06 Apr 2026</td><td>UPI-GUPTA ELECTRICALS-guptaelec@okhdfcbank-YESB0000123-790966909111-PAYMENT FROM PHONE</td><td>790966909111</td><td></td><td>27,838.00</td><td>1,78,496.96</td></tr>
+<tr><td>06 Apr 2026</td><td>06 Apr 2026</td><td>UPI-KRISHNA ENTERPRISES-krishnaent@paytm-KKBK0000123-569777818804-PAYMENT FROM PHONE</td><td>569777818804</td><td></td><td>17,356.00</td><td>1,95,852.96</td></tr>
+<tr><td>06 Apr 2026</td><td>06 Apr 2026</td><td>GST PAYMENT CPIN 31797405429382 CBIC</td><td></td><td>9,460.00</td><td></td><td>1,86,392.96</td></tr>
+<tr><td>07 Apr 2026</td><td>07 Apr 2026</td><td>NEFT CR-PUNB0123400-R K DISTRIBUTORS-SHARMA TRADERS-PUNBN77356436336395</td><td>PUNBN77356436336395</td><td></td><td>1,04,790.00</td><td>2,91,182.96</td></tr>
+<tr><td>07 Apr 2026</td><td>07 Apr 2026</td><td>CHQ PAID-MICR CTS-MU-JAIN HARDWARE STORES</td><td>467782</td><td>22,636.00</td><td></td><td>2,68,546.96</td></tr>
+<tr><td>08 Apr 2026</td><td>08 Apr 2026</td><td>UPI-GUPTA ELECTRICALS-guptaelec@okhdfcbank-YESB0000123-421774366875-PAYMENT FROM PHONE</td><td>421774366875</td><td></td><td>3,158.00</td><td>2,71,704.96</td></tr>
+<tr><td>10 Apr 2026</td><td>10 Apr 2026</td><td>NEFT CR-UTIB0000917-PATIL CONSTRUCTIONS PVT LTD-SHARMA TRADERS-UTIBN51049049549026</td><td>UTIBN51049049549026</td><td></td><td>1,78,781.00</td><td>4,50,485.96</td></tr>
+<tr><td>13 Apr 2026</td><td>13 Apr 2026</td><td>NEFT DR-HDFC0000045-OM SAI TRANSPORT-NETBANK, MUM-N320171851337-INV 362</td><td>N320171851337</td><td>14,481.00</td><td></td><td>4,36,004.96</td></tr>
+<tr><td>15 Apr 2026</td><td>15 Apr 2026</td><td>NEFT CR-UTIB0000917-PATIL CONSTRUCTIONS PVT LTD-SHARMA TRADERS-UTIBN80234588892631</td><td>UTIBN80234588892631</td><td></td><td>17,822.00</td><td>4,53,826.96</td></tr>
+<tr><td>15 Apr 2026</td><td>15 Apr 2026</td><td>IB FUNDS TRANSFER DR-50100099887766-SHARMA TRADERS</td><td></td><td>75,852.00</td><td></td><td>3,77,974.96</td></tr>
+<tr><td>15 Apr 2026</td><td>15 Apr 2026</td><td>NEFT DR-HDFC0000045-OM SAI TRANSPORT-NETBANK, MUM-N058107586470-INV 323</td><td>N058107586470</td><td>91,989.00</td><td></td><td>2,85,985.96</td></tr>
+<tr><td>15 Apr 2026</td><td>15 Apr 2026</td><td>UPI-KRISHNA ENTERPRISES-krishnaent@paytm-YESB0000123-028527288779-PAYMENT FROM PHONE</td><td>028527288779</td><td></td><td>4,698.00</td><td>2,90,683.96</td></tr>
+<tr><td>15 Apr 2026</td><td>15 Apr 2026</td><td>UPI-KRISHNA ENTERPRISES-krishnaent@paytm-SBIN0000123-884828884469-PAYMENT FROM PHONE</td><td>884828884469</td><td></td><td>15,010.00</td><td>3,05,693.96</td></tr>
+<tr><td>16 Apr 2026</td><td>16 Apr 2026</td><td>UPI-SURESH KUMAR-suresh.k@oksbi-KKBK0000456-497368180960-PAY</td><td>497368180960</td><td>1,560.06</td><td></td><td>3,04,133.90</td></tr>
+<tr><td>17 Apr 2026</td><td>17 Apr 2026</td><td>CASH DEP ANDHERI EAST</td><td></td><td></td><td>38,817.00</td><td>3,42,950.90</td></tr>
+<tr><td>17 Apr 2026</td><td>17 Apr 2026</td><td>UPI-SURESH KUMAR-suresh.k@oksbi-UTIB0000456-171218766437-PAY</td><td>171218766437</td><td>5,784.21</td><td></td><td>3,37,166.69</td></tr>
+<tr><td>17 Apr 2026</td><td>17 Apr 2026</td><td>NEFT DR-ICIC0006612-JAIN HARDWARE STORES-NETBANK, MUM-N851369042003-INV 259</td><td>N851369042003</td><td>1,21,685.00</td><td></td><td>2,15,481.69</td></tr>
+<tr><td>18 Apr 2026</td><td>18 Apr 2026</td><td>ATW-512345XXXXXX6276-S1ANMU55-MUMBAI</td><td></td><td>6,500.00</td><td></td><td>2,08,981.69</td></tr>
+<tr><td>18 Apr 2026</td><td>18 Apr 2026</td><td>UPI-KRISHNA ENTERPRISES-krishnaent@paytm-SBIN0000123-892838383899-PAYMENT FROM PHONE</td><td>892838383899</td><td></td><td>41,984.00</td><td>2,50,965.69</td></tr>
+<tr><td>19 Apr 2026</td><td>19 Apr 2026</td><td>UPI-MEHTA AND SONS-mehtasons@oksbi-ICIC0000123-259533312321-PAYMENT FROM PHONE</td><td>259533312321</td><td></td><td>41,649.00</td><td>2,92,614.69</td></tr>
+<tr><td>20 Apr 2026</td><td>20 Apr 2026</td><td>UPI-KRISHNA ENTERPRISES-krishnaent@paytm-YESB0000123-823601395518-PAYMENT FROM PHONE</td><td>823601395518</td><td></td><td>28,994.00</td><td>3,21,608.69</td></tr>
+<tr><td>20 Apr 2026</td><td>20 Apr 2026</td><td>UPI-RAHUL VERMA-rahulv@okicici-SBIN0000456-171008989723-PAY</td><td>171008989723</td><td>5,352.08</td><td></td><td>3,16,256.61</td></tr>
+<tr><td>20 Apr 2026</td><td>20 Apr 2026</td><td>UPI-PRIYA NAIR-priyanair@ybl-ICIC0000456-190271156768-PAY</td><td>190271156768</td><td>1,888.70</td><td></td><td>3,14,367.91</td></tr>
+<tr><td>20 Apr 2026</td><td>20 Apr 2026</td><td>UPI-MEHTA AND SONS-mehtasons@oksbi-HDFC0000123-003267556392-PAYMENT FROM PHONE</td><td>003267556392</td><td></td><td>39,882.00</td><td>3,54,249.91</td></tr>
+<tr><td>21 Apr 2026</td><td>21 Apr 2026</td><td>NEFT DR-HDFC0000101-ANITA DESAI-NETBANK, MUM-N051699389544-RENT</td><td></td><td>35,000.00</td><td></td><td>3,19,249.91</td></tr>
+<tr><td>21 Apr 2026</td><td>21 Apr 2026</td><td>ATW-512345XXXXXX2959-S1ANMU60-MUMBAI</td><td></td><td>5,000.00</td><td></td><td>3,14,249.91</td></tr>
+<tr><td>21 Apr 2026</td><td>21 Apr 2026</td><td>CASH DEP ANDHERI EAST</td><td></td><td></td><td>21,442.00</td><td>3,35,691.91</td></tr>
+<tr><td>21 Apr 2026</td><td>21 Apr 2026</td><td>CHQ PAID-MICR CTS-MU-JAIN HARDWARE STORES</td><td>645967</td><td>49,675.00</td><td></td><td>2,86,016.91</td></tr>
+<tr><td>23 Apr 2026</td><td>23 Apr 2026</td><td>UPI-KRISHNA ENTERPRISES-krishnaent@paytm-KKBK0000123-189062672789-PAYMENT FROM PHONE</td><td>189062672789</td><td></td><td>7,029.00</td><td>2,93,045.91</td></tr>
+<tr><td>24 Apr 2026</td><td>24 Apr 2026</td><td>UPI-RELIANCE RETAIL-relianceretail@ybl-HDFC0000456-694584748440-PAY</td><td>694584748440</td><td>5,265.55</td><td></td><td>2,87,780.36</td></tr>
+<tr><td>25 Apr 2026</td><td>25 Apr 2026</td><td>NEFT CR-HDFC0001882-GUPTA ELECTRICALS-SHARMA TRADERS-HDFCN26605609513674</td><td>HDFCN26605609513674</td><td></td><td>1,68,566.00</td><td>4,56,346.36</td></tr>
+<tr><td>26 Apr 2026</td><td>26 Apr 2026</td><td>IMPS-817239109671-RAHUL VERMA-SBIN-XXXXXXXX4336-ADVANCE</td><td>817239109671</td><td>8,985.00</td><td></td><td>4,47,361.36</td></tr>
+<tr><td>26 Apr 2026</td><td>26 Apr 2026</td><td>UPI-GUPTA ELECTRICALS-guptaelec@okhdfcbank-ICIC0000123-572679496582-PAYMENT FROM PHONE</td><td>572679496582</td><td></td><td>10,640.00</td><td>4,58,001.36</td></tr>
+<tr><td>26 Apr 2026</td><td>26 Apr 2026</td><td>NEFT DR-ICIC0006612-JAIN HARDWARE STORES-NETBANK, MUM-N184895449993-INV 748</td><td>N184895449993</td><td>70,498.00</td><td></td><td>3,87,503.36</td></tr>
+<tr><td>27 Apr 2026</td><td>27 Apr 2026</td><td>IMPS-383000446090-RAHUL VERMA-SBIN-XXXXXXXX2678-ADVANCE</td><td>383000446090</td><td>8,845.00</td><td></td><td>3,78,658.36</td></tr>
+<tr><td>28 Apr 2026</td><td>28 Apr 2026</td><td>UPI-GUPTA ELECTRICALS-guptaelec@okhdfcbank-HDFC0000123-283577535572-PAYMENT FROM PHONE</td><td>283577535572</td><td></td><td>5,250.00</td><td>3,83,908.36</td></tr>
+<tr><td>28 Apr 2026</td><td>28 Apr 2026</td><td>CHQ PAID-MICR CTS-MU-BALAJI PACKAGING</td><td>565922</td><td>63,629.00</td><td></td><td>3,20,279.36</td></tr>
+<tr><td>28 Apr 2026</td><td>28 Apr 2026</td><td>UPI-AMAZON PAY-amazonpay@apl-ICIC0000456-529548265917-PAY</td><td>529548265917</td><td>2,786.08</td><td></td><td>3,17,493.28</td></tr>
+<tr><td>29 Apr 2026</td><td>29 Apr 2026</td><td>CREDIT INTEREST CAPITALISED</td><td></td><td></td><td>367.63</td><td>3,17,860.91</td></tr>
+</table></body></html>

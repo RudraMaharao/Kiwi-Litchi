@@ -1,0 +1,205 @@
+{
+  "embeddings": {
+    "embedded": 9,
+    "cached": 0,
+    "model": "nomic-embed-text@0a109f422b47e3a30ba2b10eca18548e944e8a23073ee3f3e947efcf3c45e59f"
+  },
+  "audit": {
+    "client": "kiwi-2",
+    "flags": [
+      {
+        "type": "review",
+        "voucher": "tally:2297d91d-1584-4ef5-b5ad-46bf867fd737-00000002",
+        "reason": "Weekend/configured holiday; informational only"
+      }
+    ],
+    "anomalies": [
+      {
+        "type": "possible_misposting",
+        "voucher": "tally:2297d91d-1584-4ef5-b5ad-46bf867fd737-00000002",
+        "line": 107,
+        "ledger": "Kiwi Test Expense",
+        "alternative": "Kiwi Test Income",
+        "score": 0.07055,
+        "model": "nomic-embed-text@0a109f422b47e3a30ba2b10eca18548e944e8a23073ee3f3e947efcf3c45e59f"
+      }
+    ],
+    "skipped": [
+      "Cash legal threshold not configured with a verified source",
+      "TDS rules not configured by a CA"
+    ],
+    "note": "Review prompts, not findings of fraud or tax noncompliance."
+  },
+  "manual_batch": {
+    "seconds": 0.183,
+    "clients": [
+      {
+        "client": "demo",
+        "started": "2026-11-16T18:18:13.787747+00:00",
+        "review": {
+          "client": "demo",
+          "flags": [
+            {
+              "type": "review",
+              "voucher": "tally:demo-0-1",
+              "reason": "Round amount; informational only"
+            },
+            {
+              "type": "review",
+              "voucher": "tally:demo-1-1",
+              "reason": "Round amount; informational only"
+            },
+            {
+              "type": "review",
+              "voucher": "tally:demo-2-1",
+              "reason": "Round amount; informational only"
+            },
+            {
+              "type": "review",
+              "voucher": "tally:demo-3-0",
+              "reason": "Weekend/configured holiday; informational only"
+            },
+            {
+              "type": "review",
+              "voucher": "tally:demo-3-1",
+              "reason": "Round amount; informational only"
+            },
+            {
+              "type": "review",
+              "voucher": "tally:demo-3-1",
+              "reason": "Weekend/configured holiday; informational only"
+            },
+            {
+              "type": "review",
+              "voucher": "tally:demo-4-1",
+              "reason": "Round amount; informational only"
+            },
+            {
+              "type": "review",
+              "voucher": "tally:demo-5-1",
+              "reason": "Round amount; informational only"
+            },
+            {
+              "type": "review",
+              "voucher": "tally:demo-6-1",
+              "reason": "Round amount; informational only"
+            },
+            {
+              "type": "review",
+              "voucher": "tally:demo-7-0",
+              "reason": "Weekend/configured holiday; informational only"
+            },
+            {
+              "type": "review",
+              "voucher": "tally:demo-7-1",
+              "reason": "Round amount; informational only"
+            },
+            {
+              "type": "review",
+              "voucher": "tally:demo-7-1",
+              "reason": "Weekend/configured holiday; informational only"
+            },
+            {
+              "type": "review",
+              "voucher": "tally:demo-8-1",
+              "reason": "Round amount; informational only"
+            },
+            {
+              "type": "review",
+              "voucher": "tally:demo-9-1",
+              "reason": "Round amount; informational only"
+            },
+            {
+              "type": "review",
+              "voucher": "tally:demo-10-1",
+              "reason": "Round amount; informational only"
+            },
+            {
+              "type": "review",
+              "voucher": "tally:demo-11-1",
+              "reason": "Round amount; informational only"
+            },
+            {
+              "type": "review",
+              "voucher": "tally:demo-12-0",
+              "reason": "Weekend/configured holiday; informational only"
+            },
+            {
+              "type": "review",
+              "voucher": "tally:demo-12-1",
+              "reason": "Round amount; informational only"
+            },
+            {
+              "type": "review",
+              "voucher": "tally:demo-12-1",
+              "reason": "Weekend/configured holiday; informational only"
+            }
+          ],
+          "anomalies": [],
+          "skipped": [
+            "Cash legal threshold not configured with a verified source",
+            "TDS rules not configured by a CA"
+          ],
+          "note": "Review prompts, not findings of fraud or tax noncompliance."
+        },
+        "seconds": 0.065,
+        "finished": "2026-11-16T18:18:13.852987+00:00",
+        "python_peak_mb": 28.9,
+        "memory_note": "Python peak only. Ollama and Docker memory must be checked separately."
+      },
+      {
+        "client": "kiwi-1",
+        "started": "2026-11-16T18:18:13.855303+00:00",
+        "review": {
+          "client": "kiwi-1",
+          "flags": [],
+          "anomalies": [],
+          "skipped": [
+            "Cash legal threshold not configured with a verified source",
+            "TDS rules not configured by a CA"
+          ],
+          "note": "Review prompts, not findings of fraud or tax noncompliance."
+        },
+        "seconds": 0.003,
+        "finished": "2026-11-16T18:18:13.858024+00:00",
+        "python_peak_mb": 28.9,
+        "memory_note": "Python peak only. Ollama and Docker memory must be checked separately."
+      },
+      {
+        "client": "kiwi-2",
+        "started": "2026-11-16T18:18:13.860261+00:00",
+        "review": {
+          "client": "kiwi-2",
+          "flags": [
+            {
+              "type": "review",
+              "voucher": "tally:2297d91d-1584-4ef5-b5ad-46bf867fd737-00000002",
+              "reason": "Weekend/configured holiday; informational only"
+            }
+          ],
+          "anomalies": [
+            {
+              "type": "possible_misposting",
+              "voucher": "tally:2297d91d-1584-4ef5-b5ad-46bf867fd737-00000002",
+              "line": 107,
+              "ledger": "Kiwi Test Expense",
+              "alternative": "Kiwi Test Income",
+              "score": 0.07055,
+              "model": "nomic-embed-text@0a109f422b47e3a30ba2b10eca18548e944e8a23073ee3f3e947efcf3c45e59f"
+            }
+          ],
+          "skipped": [
+            "Cash legal threshold not configured with a verified source",
+            "TDS rules not configured by a CA"
+          ],
+          "note": "Review prompts, not findings of fraud or tax noncompliance."
+        },
+        "seconds": 0.015,
+        "finished": "2026-11-16T18:18:13.875070+00:00",
+        "python_peak_mb": 28.9,
+        "memory_note": "Python peak only. Ollama and Docker memory must be checked separately."
+      }
+    ],
+    "errors": []
+  }
+}

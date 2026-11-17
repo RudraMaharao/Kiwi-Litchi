@@ -1,0 +1,37 @@
+{
+  "installed_files_matching_package": 20,
+  "backed_up_active_practice_vouchers": 10,
+  "backed_up_ledger_totals_paise": {
+    "Cash": 50000,
+    "Kiwi Acceptance Bank": 98075,
+    "Kiwi Acceptance Supplier": 1000,
+    "Kiwi Billwise Supplier": 200,
+    "Kiwi Test Bank": 960000,
+    "Kiwi Test Capital": -1100000,
+    "Kiwi Test Expense": 10225,
+    "Kiwi Test Income": -20000,
+    "Kiwi XML Supplier": 500
+  },
+  "backup": "<data-dir>/backups/20261117-000448-d00d44",
+  "fresh_restore": "<workspace>/work/verified-restore-zjnxxdmh",
+  "backup_restore_passed": true,
+  "comparisons": [
+    {
+      "database": "kiwi-1/books.sqlite3",
+      "tables_compared": 12
+    },
+    {
+      "database": "kiwi-2/books.sqlite3",
+      "tables_compared": 12
+    },
+    {
+      "database": "demo/books.sqlite3",
+      "tables_compared": 12
+    },
+    {
+      "database": "kiwi/bahi.db",
+      "tables_compared": 9
+    }
+  ],
+  "pytest": "214 passed in 59.01s"
+}

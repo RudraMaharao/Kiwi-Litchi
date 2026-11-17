@@ -1,0 +1,178 @@
+{
+  "captured_at": "2026-11-16T18:46:02.475585+00:00",
+  "scope": "Synthetic single-machine smoke benchmark; three prompts, not a representative held-out evaluation",
+  "intent": [
+    {
+      "case": 1,
+      "question": "Payments to Kiwi Test Expense in FY 2026-27",
+      "expected": {
+        "ledger": "Kiwi Test Expense",
+        "measure": "payments",
+        "start": "2026-04-01",
+        "end": "2027-03-31"
+      },
+      "actual": {
+        "ledger": "Kiwi Test Expense",
+        "measure": "payments",
+        "start": "2026-04-01",
+        "end": "2027-03-31"
+      },
+      "exact_match": true,
+      "wall_seconds": 13.437,
+      "cold_start_requested": true,
+      "stats": {
+        "total_duration": 13433277665,
+        "load_duration": 3438519396,
+        "prompt_eval_count": 245,
+        "prompt_eval_duration": 6702095000,
+        "eval_count": 38,
+        "eval_duration": 3286663000,
+        "done_reason": "stop",
+        "generation_tokens_per_second": 11.562
+      }
+    },
+    {
+      "case": 2,
+      "question": "Receipts from Kiwi Test Income in FY 2026-27",
+      "expected": {
+        "ledger": "Kiwi Test Income",
+        "measure": "receipts",
+        "start": "2026-04-01",
+        "end": "2027-03-31"
+      },
+      "actual": {
+        "ledger": "Kiwi Test Income",
+        "measure": "receipts",
+        "start": "2026-04-01",
+        "end": "2027-03-31"
+      },
+      "exact_match": true,
+      "wall_seconds": 5.641,
+      "cold_start_requested": false,
+      "stats": {
+        "total_duration": 5637771271,
+        "load_duration": 1494504,
+        "prompt_eval_count": 246,
+        "prompt_eval_duration": 732293000,
+        "eval_count": 45,
+        "eval_duration": 4898666000,
+        "done_reason": "stop",
+        "generation_tokens_per_second": 9.186
+      }
+    },
+    {
+      "case": 3,
+      "question": "Kiwi Test Capital se FY 2026-27 kitna aaya?",
+      "expected": {
+        "ledger": "Kiwi Test Capital",
+        "measure": "receipts",
+        "start": "2026-04-01",
+        "end": "2027-03-31"
+      },
+      "actual": {
+        "ledger": "Kiwi Test Capital",
+        "measure": "payments",
+        "start": "2026-04-01",
+        "end": "2027-03-31"
+      },
+      "exact_match": false,
+      "wall_seconds": 5.266,
+      "cold_start_requested": false,
+      "stats": {
+        "total_duration": 5258837508,
+        "load_duration": 6664051,
+        "prompt_eval_count": 248,
+        "prompt_eval_duration": 820851000,
+        "eval_count": 44,
+        "eval_duration": 4423875000,
+        "done_reason": "stop",
+        "generation_tokens_per_second": 9.946
+      }
+    }
+  ],
+  "embeddings": [
+    {
+      "run": 1,
+      "cold_start_requested": true,
+      "texts": 8,
+      "vectors": 8,
+      "dimensions": 768,
+      "wall_seconds": 1.923,
+      "texts_per_second": 4.159,
+      "stats": {
+        "total_duration": 1918643561,
+        "load_duration": 1196964644,
+        "prompt_eval_count": 138
+      }
+    },
+    {
+      "run": 2,
+      "cold_start_requested": false,
+      "texts": 8,
+      "vectors": 8,
+      "dimensions": 768,
+      "wall_seconds": 0.763,
+      "texts_per_second": 10.479,
+      "stats": {
+        "total_duration": 759217931,
+        "load_duration": 1115854,
+        "prompt_eval_count": 138
+      }
+    }
+  ],
+  "intent_model_after_runs": {
+    "models": [
+      {
+        "name": "llama3.2:1b-instruct-q4_K_M",
+        "model": "llama3.2:1b-instruct-q4_K_M",
+        "size": 1010114231,
+        "digest": "22bc6b92eb0160c4629782fca05a9032c59d306ab2058b7dacc8a4644fbafa02",
+        "details": {
+          "parent_model": "",
+          "format": "gguf",
+          "family": "llama",
+          "families": [
+            "llama"
+          ],
+          "parameter_size": "1.2B",
+          "quantization_level": "Q4_K_M"
+        },
+        "expires_at": "2026-11-17T00:21:26.892853792+05:30",
+        "size_vram": 0,
+        "context_length": 4096,
+        "runner": "llamacpp"
+      }
+    ]
+  },
+  "embedding_model_after_runs": {
+    "models": [
+      {
+        "name": "nomic-embed-text:latest",
+        "model": "nomic-embed-text:latest",
+        "size": 389053152,
+        "digest": "0a109f422b47e3a30ba2b10eca18548e944e8a23073ee3f3e947efcf3c45e59f",
+        "details": {
+          "parent_model": "",
+          "format": "gguf",
+          "family": "nomic-bert",
+          "families": [
+            "nomic-bert"
+          ],
+          "parameter_size": "137M",
+          "quantization_level": "F16"
+        },
+        "expires_at": "2026-11-17T00:21:29.583014534+05:30",
+        "size_vram": 0,
+        "context_length": 2048,
+        "runner": "llamacpp"
+      }
+    ]
+  },
+  "summary": {
+    "intent_cases": 3,
+    "exact_matches": 2,
+    "warm_intent_median_wall_seconds": 5.4535,
+    "warm_embedding_texts_per_second": 10.479,
+    "caution": "One session and tiny synthetic inputs, no p95/accuracy/overnight or long-input-context claim"
+  }
+}

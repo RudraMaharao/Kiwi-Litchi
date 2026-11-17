@@ -1,0 +1,357 @@
+{
+ "opening": 8500000,
+ "closing": -3549190,
+ "rows": [
+  {
+   "date": "2026-04-01",
+   "value_date": "2026-04-01",
+   "narration": "NEFT/N420309988459/AMBIKA STEEL PVT LTD/UTIB0000123",
+   "ref": "",
+   "amount": 16954600,
+   "direction": "debit",
+   "balance": -8454600,
+   "kind": "neft_out"
+  },
+  {
+   "date": "2026-04-01",
+   "value_date": "2026-04-01",
+   "narration": "UPI/P2M/906097122094/AMAZON PAY/Pay via UPI/YESB",
+   "ref": "",
+   "amount": 386476,
+   "direction": "debit",
+   "balance": -8841076,
+   "kind": "upi_out"
+  },
+  {
+   "date": "2026-04-03",
+   "value_date": "2026-04-03",
+   "narration": "UPI/P2M/283047418958/BHARAT PETROLEUM/Pay via UPI/UTIB",
+   "ref": "",
+   "amount": 86049,
+   "direction": "debit",
+   "balance": -8927125,
+   "kind": "upi_out"
+  },
+  {
+   "date": "2026-04-04",
+   "value_date": "2026-04-04",
+   "narration": "IMPS/P2A/222176571492/SHARMA TRADERS/Self",
+   "ref": "",
+   "amount": 8937400,
+   "direction": "debit",
+   "balance": -17864525,
+   "kind": "self_out"
+  },
+  {
+   "date": "2026-04-04",
+   "value_date": "2026-04-04",
+   "narration": "UPI/P2A/530387184627/R K DISTRIBUTORS/ICIC/UPI",
+   "ref": "",
+   "amount": 3545700,
+   "direction": "credit",
+   "balance": -14318825,
+   "kind": "upi_in"
+  },
+  {
+   "date": "2026-04-04",
+   "value_date": "2026-04-04",
+   "narration": "UPI/P2M/572016669873/BHARAT PETROLEUM/Pay via UPI/SBIN",
+   "ref": "",
+   "amount": 391530,
+   "direction": "debit",
+   "balance": -14710355,
+   "kind": "upi_out"
+  },
+  {
+   "date": "2026-04-06",
+   "value_date": "2026-04-06",
+   "narration": "NEFT/PUNBN05408392238011/R K DISTRIBUTORS/PUNB0123400",
+   "ref": "",
+   "amount": 5369000,
+   "direction": "credit",
+   "balance": -9341355,
+   "kind": "neft_in"
+  },
+  {
+   "date": "2026-04-06",
+   "value_date": "2026-04-06",
+   "narration": "NEFT/N462429158959/AMBIKA STEEL PVT LTD/UTIB0000123",
+   "ref": "",
+   "amount": 14786600,
+   "direction": "debit",
+   "balance": -24127955,
+   "kind": "neft_out"
+  },
+  {
+   "date": "2026-04-08",
+   "value_date": "2026-04-08",
+   "narration": "UPI/P2M/302128126465/RAHUL VERMA/Pay via UPI/SBIN",
+   "ref": "",
+   "amount": 43848,
+   "direction": "debit",
+   "balance": -24171803,
+   "kind": "upi_out"
+  },
+  {
+   "date": "2026-04-08",
+   "value_date": "2026-04-08",
+   "narration": "NEFT/N462272477744/OM SAI TRANSPORT/HDFC0000045",
+   "ref": "",
+   "amount": 4706900,
+   "direction": "debit",
+   "balance": -28878703,
+   "kind": "neft_out"
+  },
+  {
+   "date": "2026-04-10",
+   "value_date": "2026-04-10",
+   "narration": "UPI/P2A/677149343725/KRISHNA ENTERPRISES/HDFC/UPI",
+   "ref": "",
+   "amount": 2966200,
+   "direction": "credit",
+   "balance": -25912503,
+   "kind": "upi_in"
+  },
+  {
+   "date": "2026-04-10",
+   "value_date": "2026-04-10",
+   "narration": "IMPS/P2A/404861038402/PRIYA NAIR/SBIN/Advance",
+   "ref": "",
+   "amount": 1491200,
+   "direction": "debit",
+   "balance": -27403703,
+   "kind": "imps_out"
+  },
+  {
+   "date": "2026-04-11",
+   "value_date": "2026-04-11",
+   "narration": "ATM-CASH/950520/ANDHERI MUMBAI",
+   "ref": "",
+   "amount": 700000,
+   "direction": "debit",
+   "balance": -28103703,
+   "kind": "atm"
+  },
+  {
+   "date": "2026-04-11",
+   "value_date": "2026-04-11",
+   "narration": "UPI/P2M/461274038051/SWIGGY/Pay via UPI/HDFC",
+   "ref": "",
+   "amount": 508435,
+   "direction": "debit",
+   "balance": -28612138,
+   "kind": "upi_out"
+  },
+  {
+   "date": "2026-04-12",
+   "value_date": "2026-04-12",
+   "narration": "NEFT/N861823144438/ANITA DESAI/RENT",
+   "ref": "",
+   "amount": 3500000,
+   "direction": "debit",
+   "balance": -32112138,
+   "kind": "rent"
+  },
+  {
+   "date": "2026-04-13",
+   "value_date": "2026-04-14",
+   "narration": "NEFT/N077914434998/ANITA DESAI/RENT",
+   "ref": "",
+   "amount": 3500000,
+   "direction": "debit",
+   "balance": -35612138,
+   "kind": "rent"
+  },
+  {
+   "date": "2026-04-13",
+   "value_date": "2026-04-13",
+   "narration": "UPI/P2M/374383524008/SWIGGY/Pay via UPI/HDFC",
+   "ref": "",
+   "amount": 485541,
+   "direction": "debit",
+   "balance": -36097679,
+   "kind": "upi_out"
+  },
+  {
+   "date": "2026-04-13",
+   "value_date": "2026-04-14",
+   "narration": "UPI/P2M/393837495264/RELIANCE RETAIL/Pay via UPI/YESB",
+   "ref": "",
+   "amount": 502616,
+   "direction": "debit",
+   "balance": -36600295,
+   "kind": "upi_out"
+  },
+  {
+   "date": "2026-04-14",
+   "value_date": "2026-04-14",
+   "narration": "UPI/P2M/805410185806/BHARAT PETROLEUM/Pay via UPI/KKBK",
+   "ref": "",
+   "amount": 584200,
+   "direction": "debit",
+   "balance": -37184495,
+   "kind": "upi_out"
+  },
+  {
+   "date": "2026-04-17",
+   "value_date": "2026-04-18",
+   "narration": "NEFT/UTIBN52024760481056/PATIL CONSTRUCTIONS PVT LTD/UTIB0000917",
+   "ref": "",
+   "amount": 18124800,
+   "direction": "credit",
+   "balance": -19059695,
+   "kind": "neft_in"
+  },
+  {
+   "date": "2026-04-17",
+   "value_date": "2026-04-17",
+   "narration": "NEFT/ICICN02174340025664/MEHTA AND SONS/ICIC0000234",
+   "ref": "",
+   "amount": 19881200,
+   "direction": "credit",
+   "balance": 821505,
+   "kind": "neft_in"
+  },
+  {
+   "date": "2026-04-18",
+   "value_date": "2026-04-18",
+   "narration": "UPI/P2A/063176783355/MEHTA AND SONS/UTIB/UPI",
+   "ref": "",
+   "amount": 612900,
+   "direction": "credit",
+   "balance": 1434405,
+   "kind": "upi_in"
+  },
+  {
+   "date": "2026-04-19",
+   "value_date": "2026-04-19",
+   "narration": "UPI/P2A/587486093964/SHREE GANESH TRADERS/HDFC/UPI",
+   "ref": "",
+   "amount": 185200,
+   "direction": "credit",
+   "balance": 1619605,
+   "kind": "upi_in"
+  },
+  {
+   "date": "2026-04-19",
+   "value_date": "2026-04-19",
+   "narration": "Consolidated Charges for A/c",
+   "ref": "",
+   "amount": 4625,
+   "direction": "debit",
+   "balance": 1614980,
+   "kind": "charges"
+  },
+  {
+   "date": "2026-04-21",
+   "value_date": "2026-04-21",
+   "narration": "UPI/P2A/714180291010/R K DISTRIBUTORS/SBIN/UPI",
+   "ref": "",
+   "amount": 1201100,
+   "direction": "credit",
+   "balance": 2816080,
+   "kind": "upi_in"
+  },
+  {
+   "date": "2026-04-22",
+   "value_date": "2026-04-22",
+   "narration": "IMPS/P2A/065038908360/SURESH KUMAR/SBIN/Advance",
+   "ref": "",
+   "amount": 934500,
+   "direction": "debit",
+   "balance": 1881580,
+   "kind": "imps_out"
+  },
+  {
+   "date": "2026-04-23",
+   "value_date": "2026-04-23",
+   "narration": "ATM-CASH/063456/ANDHERI MUMBAI",
+   "ref": "",
+   "amount": 750000,
+   "direction": "debit",
+   "balance": 1131580,
+   "kind": "atm"
+  },
+  {
+   "date": "2026-04-23",
+   "value_date": "2026-04-24",
+   "narration": "NEFT/N351904061954/ANITA DESAI/RENT",
+   "ref": "",
+   "amount": 3500000,
+   "direction": "debit",
+   "balance": -2368420,
+   "kind": "rent"
+  },
+  {
+   "date": "2026-04-23",
+   "value_date": "2026-04-23",
+   "narration": "GST/CPIN 24691214413218/CBIC",
+   "ref": "",
+   "amount": 1742400,
+   "direction": "debit",
+   "balance": -4110820,
+   "kind": "gst"
+  },
+  {
+   "date": "2026-04-23",
+   "value_date": "2026-04-23",
+   "narration": "UPI/P2M/143903046953/PRIYA NAIR/Pay via UPI/SBIN",
+   "ref": "",
+   "amount": 444694,
+   "direction": "debit",
+   "balance": -4555514,
+   "kind": "upi_out"
+  },
+  {
+   "date": "2026-04-25",
+   "value_date": "2026-04-25",
+   "narration": "NEFT/KKBKN04263709521308/KRISHNA ENTERPRISES/KKBK0001207",
+   "ref": "",
+   "amount": 9776100,
+   "direction": "credit",
+   "balance": 5220586,
+   "kind": "neft_in"
+  },
+  {
+   "date": "2026-04-25",
+   "value_date": "2026-04-26",
+   "narration": "NEFT/N322288717098/ANITA DESAI/RENT",
+   "ref": "",
+   "amount": 3500000,
+   "direction": "debit",
+   "balance": 1720586,
+   "kind": "rent"
+  },
+  {
+   "date": "2026-04-27",
+   "value_date": "2026-04-27",
+   "narration": "GST/CPIN 49760583102956/CBIC",
+   "ref": "",
+   "amount": 4148400,
+   "direction": "debit",
+   "balance": -2427814,
+   "kind": "gst"
+  },
+  {
+   "date": "2026-04-28",
+   "value_date": "2026-04-28",
+   "narration": "IMPS/P2A/751012469864/RAHUL VERMA/SBIN/Advance",
+   "ref": "",
+   "amount": 1225200,
+   "direction": "debit",
+   "balance": -3653014,
+   "kind": "imps_out"
+  },
+  {
+   "date": "2026-04-29",
+   "value_date": "2026-04-29",
+   "narration": "Int.Pd:SB Interest",
+   "ref": "",
+   "amount": 103824,
+   "direction": "credit",
+   "balance": -3549190,
+   "kind": "interest"
+  }
+ ],
+ "no_opening": false
+}

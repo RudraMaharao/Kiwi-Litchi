@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% from "_macros.html" import tabs %}
+{% block title %}Ledgers for {{ c.name }} | Kiwi{% endblock %}
+{% block crumbs %}{% include "_clientnav.html" %}{% endblock %}
+{% block content %}
+<div class="pagehead"><h1>Ledgers</h1></div>
+{{ tabs(c, 'ledgers') }}
+<div class="split">
+  <section aria-labelledby="f-h">
+    <h2 id="f-h">From Tally</h2>
+    <p>Kiwi matches parties against this list and uses it to tell Payment and Receipt from Contra · Fetch it again after you add ledgers in Tally</p>
+    <form method="post" action="{{ url_for('ledgers_action', cid=c.id) }}">
+      <input type="hidden" name="_token" value="{{ csrf }}">
+      <input type="hidden" name="action" value="fetch">
+      <button class="btn btn-primary" type="submit">Fetch ledgers from {{ c.tally_company or 'Tally' }}</button>
+    </form>
+    {% if not c.tally_company %}<p class="hint">Without a Tally company name Kiwi asks whichever company is open <a href="{{ url_for('client_settings', cid=c.id) }}">Set the company</a></p>{% endif %}
+  </section>
+  <section aria-labelledby="a-h">
+    <h2 id="a-h">Add by hand</h2>
+    <form method="post" action="{{ url_for('ledgers_action', cid=c.id) }}">
+      <input type="hidden" name="_token" value="{{ csrf }}">
+      <input type="hidden" name="action" value="add">
+      <label for="text">One ledger per line, optionally with its group after a comma</label>
+      <textarea id="text" name="text" rows="5" placeholder="Jain Hardware Stores, Sundry Creditors&#10;Staff Welfare, Indirect Expenses"></textarea>
+      <button class="btn" type="submit">Add ledgers</button>
+    </form>
+  </section>
+</div>
+<section aria-labelledby="l-h">
+  <h2 id="l-h">{{ ledgers|length }} ledger{{ '' if ledgers|length == 1 else 's' }}</h2>
+  {% if ledgers %}
+  <label class="filter"><span class="sr">Find a ledger</span><input type="search" placeholder="Find a ledger" data-filter="#ledgers tbody tr"></label>
+  <div class="tablewrap">
+  <table class="ledger" id="ledgers">
+    <thead><tr><th scope="col">Ledger</th><th scope="col">Group</th><th scope="col">Used as</th><th scope="col">Source</th><th scope="col"><span class="sr">Actions</span></th></tr></thead>
+    <tbody>
+    {% for l in ledgers %}
+      <tr>
+        <td>{{ l.name }}</td><td>{{ l.parent }}</td>
+        <td>{{ {'bank': 'Bank', 'cash': 'Cash', 'debtor': 'Customer', 'creditor': 'Supplier', 'expense': 'Expense', 'income': 'Income', 'tax': 'Tax', 'loan': 'Loan', 'suspense': 'Suspense', 'other': 'Other'}.get(l.kind, '') }}</td>
+        <td>{{ 'Tally' if l.source == 'tally' else 'Added here' }}</td>
+        <td class="rowactions">{% if l.source != 'tally' %}
+          <form method="post" action="{{ url_for('ledgers_action', cid=c.id) }}" class="inline-form">
+            <input type="hidden" name="_token" value="{{ csrf }}"><input type="hidden" name="action" value="delete"><input type="hidden" name="name" value="{{ l.name }}">
+            <button class="btn-link danger" type="submit">Remove</button>
+          </form>{% endif %}</td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+  </div>
+  {% else %}
+  <p class="muted">No ledgers yet · Without them Kiwi still suggests standard entries and remembers your choices, but can't match party names</p>
+  {% endif %}
+</section>
+{% endblock %}

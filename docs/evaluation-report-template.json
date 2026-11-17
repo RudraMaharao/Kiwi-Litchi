@@ -1,0 +1,43 @@
+{
+  "dataset": {
+    "version": null,
+    "source": null,
+    "frozen_at": null,
+    "calibration_month": null,
+    "test_month": null,
+    "labelled_rows": 0
+  },
+  "model_digest": null,
+  "ledger": {
+    "top1_accuracy": null,
+    "kiwi_baseline_accuracy": null,
+    "ready_accuracy": null,
+    "ready_coverage": null,
+    "selected_n": 0,
+    "gate_enabled": false
+  },
+  "book_questions": {
+    "n": 0,
+    "exact_intent_accuracy": null,
+    "returned_answer_arithmetic_accuracy": null
+  },
+  "law": {
+    "n": 0,
+    "correct_section_recall_at_5": null,
+    "ca_judged_answer_accuracy": null,
+    "confidently_wrong": null
+  },
+  "audit": {
+    "planted_errors": 0,
+    "inspected_k": 0,
+    "precision_at_k": null,
+    "recall_at_k": null
+  },
+  "performance": {
+    "representative_rows": null,
+    "elapsed_seconds": null,
+    "whole_machine_peak_ram_bytes": null,
+    "completed_before_0600_local": null
+  },
+  "note": "Null means not measured, never substitute a target or synthetic smoke score"
+}

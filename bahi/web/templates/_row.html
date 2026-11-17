@@ -1,0 +1,55 @@
+{%- set src_labels = {'rule': 'Your rule', 'memory': 'Learned', 'own': 'Own account', 'category': 'Standard entry', 'match': 'Name match', 'suspense': 'Not matched', 'manual': 'Set by you'} -%}
+{%- set cat_names = {'cash_withdrawal': 'Cash withdrawal', 'cash_deposit': 'Cash deposit', 'bank_charges': 'Bank charges', 'interest': 'Interest', 'tax_gst': 'GST payment', 'tax_income': 'Income tax or TDS', 'reversal': 'Reversal'} -%}
+{%- set editable = r.status in ('review', 'ready', 'skipped') -%}
+{%- set known = (not ledger_kinds) or ((r.ledger or '')|lower in ledger_kinds) or (r.ledger|lower == 'cash') or (r.map_source == 'own') -%}
+{%- set vt = mapper.voucher_role(r.ledger, r.direction).title() if (r.ledger and r.direction) else '' -%}
+<tr id="t{{ r.id }}" data-id="{{ r.id }}" data-status="{{ r.status }}" class="row row-{{ r.status }}{% if r.check_status == 'mismatch' %} row-mismatch{% endif %}{% if r.map_source == 'suspense' and editable %} row-unmatched{% endif %}" data-search="{{ (r.narration ~ ' ' ~ (r.party or '') ~ ' ' ~ (r.ledger or '') ~ ' ' ~ (r.amount / 100)|string)|lower }}">
+  <td class="sel">{% if editable %}<input type="checkbox" aria-label="Select this row" data-select>{% endif %}</td>
+  <td class="date"><time datetime="{{ r.date }}">{{ r.date|short_date }}</time>{% if r.value_date and r.value_date != r.date %}<span class="sub" title="Value date">value {{ r.value_date|short_date }}</span>{% endif %}</td>
+  <td class="narr">
+    <div class="party">{{ r.party or cat_names.get(r.category, '') or 'Unknown party' }}{% if r.channel and r.channel != 'OTHER' %} <span class="chan">{{ r.channel }}</span>{% endif %}</div>
+    <div class="raw">{{ r.narration }}{% if r.ref and r.ref not in r.narration %} <span class="ref">Ref {{ r.ref }}</span>{% endif %}</div>
+    {%- if r.check_status == 'mismatch' %}<p class="note note-bad">{{ r.check_note }}</p>
+    {%- elif r.check_status in ('corrected', 'datecheck') %}<p class="note note-warn">{{ r.check_note }}</p>{% endif %}
+    {%- if r.post_error and r.status in ('ready', 'review') %}<p class="note note-bad">Tally said: {{ r.post_error }}</p>{% endif %}
+    {%- if r.status == 'skipped' and r.map_note %}<p class="note">{{ r.map_note }}</p>{% endif %}
+  </td>
+  <td class="num dr">{{ r.amount|inr if r.direction == 'debit' else '' }}</td>
+  <td class="num cr">{{ r.amount|inr if r.direction == 'credit' else '' }}</td>
+  <td class="num bal">{{ r.balance|inr if r.balance is not none else '' }}
+    {%- if r.check_status in ('ok', 'flipped', 'corrected') %}<span class="chk chk-ok" title="Matches the running balance{% if r.check_status != 'ok' %} ({{ r.check_note or 'column corrected' }}){% endif %}" aria-label="Matches the running balance">✓</span>
+    {%- elif r.check_status == 'mismatch' %}<span class="chk chk-bad" title="{{ r.check_note }}" aria-label="Doesn't match the running balance">✗</span>
+    {%- elif r.check_status == 'nobalance' %}<span class="chk chk-none" title="This statement has no balance column" aria-label="Not checked">–</span>
+    {%- else %}<span class="chk chk-none" title="{{ r.check_note or 'Not checked' }}" aria-label="Not checked">?</span>{% endif %}
+  </td>
+  <td class="led">
+    {% if r.direction is none and editable %}
+      <span class="ask">Money in or out?</span>
+      <span class="dirbtns"><button class="btn btn-small" type="button" data-direction="debit">Out</button><button class="btn btn-small" type="button" data-direction="credit">In</button></span>
+    {% elif editable %}
+      <input class="ledger-input" list="ledger-list" value="{{ r.ledger }}" data-ledger data-orig="{{ r.ledger }}" aria-label="Ledger for {{ r.party or r.narration[:30] }}" spellcheck="false" autocomplete="off">
+      <div class="ledmeta"><span class="src src-{{ r.map_source }}" title="{{ r.map_note }}">{{ src_labels.get(r.map_source, r.map_source) }}</span>{% if vt %}<span class="vt">{{ vt }}</span>{% endif %}{% if r.ledger and not known and r.map_source != 'suspense' %}<span class="newled" title="This ledger isn't in Tally yet · Kiwi creates it when posting">new ledger</span>{% endif %}</div>
+    {% else %}
+      <span class="ledger-text">{{ r.ledger }}</span>
+      {% if vt %}<div class="ledmeta"><span class="vt">{{ vt }}</span></div>{% endif %}
+    {% endif %}
+  </td>
+  <td class="act">
+    {% if r.status == 'review' %}
+      <button class="btn btn-small" type="button" data-action="approve"{% if r.direction is none or not r.ledger %} disabled{% endif %}>Approve</button>
+      <button class="btn-link" type="button" data-action="skip">Skip</button>
+    {% elif r.status == 'ready' %}
+      <span class="state state-ready">Ready</span>
+      <button class="btn-link" type="button" data-action="skip">Skip</button>
+    {% elif r.status == 'skipped' %}
+      <span class="state">Skipped</span>
+      <button class="btn-link" type="button" data-action="restore">Undo</button>
+    {% elif r.status == 'posted' %}
+      <span class="state state-done">In Tally</span>
+    {% elif r.status == 'exported' %}
+      <span class="state state-done">In XML file</span>
+    {% elif r.status == 'duplicate' %}
+      <span class="state" title="{{ r.map_note }}">Repeated</span>
+    {% endif %}
+  </td>
+</tr>

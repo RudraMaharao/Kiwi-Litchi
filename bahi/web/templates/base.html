@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="bahi-token" content="{{ csrf }}">
+<title>{% block title %}Kiwi{% endblock %}</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='app.css') }}?v={{ version }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='workspace.css') }}?v=20261116">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='4' y='3' width='24' height='26' rx='2' fill='%23F3F8F1' stroke='%231D2A44' stroke-width='2'/%3E%3Cpath d='M10 3v26' stroke='%23B42318' stroke-width='2'/%3E%3Cpath d='M13 11h11M13 16h11M13 21h8' stroke='%2373A26C' stroke-width='2'/%3E%3C/svg%3E">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<aside class="workspace-nav" aria-label="Workspace navigation">
+  <a class="workspace-brand" href="{{ url_for('home') }}"><span class="workspace-symbol" aria-hidden="true"></span><span>kiwi<span class="brand-pair"> + litchi</span></span></a>
+  <p class="workspace-caption"><span></span> Your local workspace</p>
+  <p class="nav-label">BOOKKEEPING</p>
+  <a class="workspace-item{% if request.endpoint == 'home' %} active{% endif %}" href="{{ url_for('home') }}"><span aria-hidden="true">▦</span> All clients</a>
+  {% if c is defined %}
+  <div class="nav-client">{{ c.name }}</div>
+  {% for endpoint, label, icon in [('client_page','Statements','▤'),('review','Review entries','✓'),('ledgers_page','Ledgers','≡'),('rules_page','Rules & memory','↳'),('client_settings','Client settings','⚙')] %}
+  <a class="workspace-item{% if request.endpoint == endpoint %} active{% endif %}" href="{{ url_for(endpoint,cid=c.id) }}"><span aria-hidden="true">{{ icon }}</span>{{ label }}</a>
+  {% endfor %}
+  {% endif %}
+  <p class="nav-label">INTELLIGENCE</p>
+  <a class="workspace-item" href="/litchi/"><span aria-hidden="true">✧</span>Litchi assistant </a>
+  <div class="workspace-bottom"><strong>Checked · Reviewed · Posted</strong><p>Your records stay on this computer</p><a href="{{ url_for('app_settings') }}">App settings →</a></div>
+</aside>
+<header class="topbar">
+  <a class="brand" href="{{ url_for('home') }}" aria-label="Kiwi home">
+    <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><rect x="4" y="3" width="24" height="26" rx="2"/><path class="m" d="M10 3v26"/><path class="r" d="M13 11h11M13 16h11M13 21h8"/></svg>
+    <span>Kiwi</span>
+  </a>
+  {% block crumbs %}{% endblock %}
+  <div class="topbar-end">
+    <a class="toplink" href="/litchi/">Litchi assistant</a>
+    <a class="tally-state" href="{{ url_for('app_settings') }}" data-tally-state>Checking Tally</a>
+    <a class="toplink" href="{{ url_for('app_settings') }}">Settings</a>
+  </div>
+</header>
+{% if edu_mode %}
+<div class="banner banner-warn" role="status">Test mode is on: voucher dates move to the 1st, 2nd or 31st for TallyPrime Educational · Turn off <code>edu_mode</code> in bahi.toml before posting real books</div>
+{% endif %}
+{% with messages = get_flashed_messages(with_categories=true) %}
+  {% if messages %}<div class="flashes">{% for cat, msg in messages %}<p class="flash flash-{{ cat }}" role="{{ 'alert' if cat == 'error' else 'status' }}">{{ msg }}</p>{% endfor %}</div>{% endif %}
+{% endwith %}
+<main id="main" class="{% block mainclass %}page{% endblock %}">
+{% block content %}{% endblock %}
+</main>
+<script src="{{ url_for('static', filename='app.js') }}?v={{ version }}"></script>
+</body>
+</html>

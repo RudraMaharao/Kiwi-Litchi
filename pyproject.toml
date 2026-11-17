@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kiwi-litchi"
+version = "0.1.0"
+description = "Local bank statement review and bookkeeping assistant for Linux Mint"
+requires-python = ">=3.10"
+dependencies = ["pdfplumber>=0.11,<0.12", "pypdfium2>=4,<6", "openpyxl>=3.1,<4", "xlrd>=2,<3", "flask>=3,<4", "waitress>=3,<4", "rapidfuzz>=3,<4", "tomli>=2; python_version < '3.11'"]
+
+[project.optional-dependencies]
+files = ["pdfplumber>=0.11,<0.12", "openpyxl>=3.1,<4", "xlrd>=2,<3", "Pillow>=10,<13", "numpy>=1.26,<3"]
+vectors = ["sqlite-vec>=0.1.6,<0.2"]
+server = ["waitress>=3,<4"]
+tests = ["reportlab>=4,<5", "pypdf>=5,<7", "pytest>=8,<10"]
+
+[project.scripts]
+kiwi = "kiwi_litchi.launcher:main"
+litchi = "kiwi_litchi.cli:main"
+bahi = "bahi.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["kiwi_litchi*", "bahi*"]
+
+[tool.setuptools.package-data]
+kiwi_litchi = ["static/*"]
+bahi = ["web/templates/*.html", "web/static/*.css", "web/static/*.js", "web/static/fonts/*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

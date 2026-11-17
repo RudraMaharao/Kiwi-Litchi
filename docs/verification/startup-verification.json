@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "evidence": "startup-service-results.txt",
+  "web_service": "enabled and active/running",
+  "jobs": {
+    "kiwi-watch": "success",
+    "kiwi-backup": "success",
+    "kiwi-lab": "success",
+    "litchi-batch": "success"
+  },
+  "timers": [
+    "kiwi-watch.timer",
+    "kiwi-backup.timer",
+    "kiwi-lab.timer",
+    "litchi-batch.timer"
+  ],
+  "linger": true,
+  "fresh_browser_reload": "app login page loaded",
+  "actual_reboot_tested": false,
+  "representative_overnight_run_tested": false
+}

@@ -1,0 +1,126 @@
+{% extends "base.html" %}
+{% from "_macros.html" import tabs, check_label %}
+{% block title %}{{ c.name }} | Kiwi{% endblock %}
+{% block crumbs %}{% include "_clientnav.html" %}{% endblock %}
+{% block content %}
+<div class="pagehead">
+  <div>
+    <h1>{{ c.name }}</h1>
+    <p class="sub">{% if c.tally_company %}Posts to the Tally company <strong>{{ c.tally_company }}</strong>{% else %}No Tally company set <a href="{{ url_for('client_settings', cid=c.id) }}">Set it in Client settings</a>{% endif %}</p>
+  </div>
+</div>
+{{ tabs(c, 'overview') }}
+
+<div class="split">
+  <section class="upload" aria-labelledby="up-h">
+    <h2 id="up-h">Add statements</h2>
+    <form id="upload" class="dropzone" method="post" action="{{ url_for('upload', cid=c.id) }}" enctype="multipart/form-data" data-cid="{{ c.id }}">
+      <input type="hidden" name="_token" value="{{ csrf }}">
+      <input id="files" class="sr" type="file" name="files" multiple accept=".pdf,.xls,.xlsx,.csv,.txt,.htm,.html,.jpg,.jpeg,.png,.tif,.tiff,.webp">
+      <label for="files" class="dropzone-target">
+        <span class="dz-main">Drop statements here, or choose files</span>
+        <span class="dz-sub">PDF (locked ones too), Excel, CSV, scans and phone photos</span>
+      </label>
+      <div class="upload-options">
+        <label>Bank account
+          <select name="account_id">
+            <option value="">Work it out from the statement</option>
+            {% for a in accounts %}<option value="{{ a.id }}">{{ a.label }}</option>{% endfor %}
+          </select>
+        </label>
+        <label>PDF password <span class="muted">(only if locked)</span>
+          <input type="password" name="password" autocomplete="off">
+        </label>
+      </div>
+      <button class="btn btn-primary" type="submit">Read statements</button>
+    </form>
+    <div id="upload-status" class="jobstatus" aria-live="polite"></div>
+  </section>
+
+  <section class="nextstep" aria-labelledby="ns-h">
+    <h2 id="ns-h">Next step</h2>
+    {% set review_n = counts.get('review', 0) %}
+    {% set ready_n = counts.get('ready', 0) %}
+    {% if not statements %}
+      <p>Add a statement to begin · Kiwi remembers this client's ledgers from month to month</p>
+    {% else %}
+      <dl class="tally-counts">
+        <div><dt>Need your review</dt><dd>{% if review_n %}<a href="{{ url_for('review', cid=c.id, status='review') }}">{{ review_n }}</a>{% else %}0{% endif %}</dd></div>
+        <div><dt>Ready for Tally</dt><dd>{% if ready_n %}<a href="{{ url_for('review', cid=c.id, status='ready') }}">{{ ready_n }}</a>{% else %}0{% endif %}</dd></div>
+        <div><dt>Already in Tally</dt><dd>{{ counts.get('posted', 0) + counts.get('exported', 0) }}</dd></div>
+      </dl>
+      {% for p in plan.problems %}<p class="problem">{{ p }} <a href="{{ url_for('client_settings', cid=c.id) }}">Client settings</a></p>{% endfor %}
+      <div class="actions">
+        {% if review_n %}<a class="btn btn-primary" href="{{ url_for('review', cid=c.id, status='review') }}">Review {{ review_n }} row{{ '' if review_n == 1 else 's' }}</a>{% endif %}
+        {% if plan.specs %}
+          <button class="btn{% if not review_n %} btn-primary{% endif %}" type="button" data-post-tally="{{ url_for('post_tally', cid=c.id) }}" data-count="{{ plan.specs|length }}">Post {{ plan.specs|length }} to Tally</button>
+          <form method="post" action="{{ url_for('export_xml', cid=c.id) }}" class="inline-form">
+            <input type="hidden" name="_token" value="{{ csrf }}">
+            <button class="btn" type="submit">Download Tally XML</button>
+          </form>
+        {% endif %}
+        <a class="btn btn-quiet" href="{{ url_for('excel', cid=c.id) }}">Download Excel</a>
+      </div>
+      <div id="post-status" class="jobstatus" aria-live="polite"></div>
+    {% endif %}
+  </section>
+</div>
+
+{% if statements %}
+<section aria-labelledby="st-h">
+  <h2 id="st-h">Statements</h2>
+  <div class="tablewrap">
+  <table class="ledger statements">
+    <thead><tr><th scope="col">Period</th><th scope="col">Account</th><th scope="col">File</th><th scope="col" class="num">Rows</th><th scope="col">Balance check</th><th scope="col">Progress</th><th scope="col"><span class="sr">Actions</span></th></tr></thead>
+    <tbody>
+    {% for s in statements %}
+      <tr>
+        <td class="nowrap">{{ s.period_from|nice_date }} to {{ s.period_to|nice_date }}</td>
+        <td>{{ s.account_label }}</td>
+        <td class="file">{{ s.filename }}{% if s.source.endswith('ocr') %} <span class="tag" title="Read from an image; check narrations by eye">scan</span>{% endif %}</td>
+        <td class="num">{{ s.rows }}{% if s.duplicates %}<span class="sub">{{ s.duplicates }} repeated</span>{% endif %}</td>
+        <td><span class="stamp stamp-{{ s.status }}">{{ check_label(s.status) }}</span></td>
+        <td class="nowrap">{% if s.to_review %}<a href="{{ url_for('review', cid=c.id, statement=s.id, status='review') }}">{{ s.to_review }} to review</a>{% elif s.ready %}{{ s.ready }} ready{% else %}<span class="muted">{{ s.done }} in Tally</span>{% endif %}</td>
+        <td class="rowactions">
+          <a href="{{ url_for('review', cid=c.id, statement=s.id) }}">Open</a>
+          <a href="{{ url_for('excel', cid=c.id, statement=s.id) }}">Excel</a>
+          <form method="post" action="{{ url_for('delete_statement', cid=c.id, sid=s.id) }}" class="inline-form" data-confirm="{% if s.done %}{{ s.done }} rows of {{ s.filename }} are already in Tally · Delete it from Kiwi anyway? Remove those vouchers in Tally yourself.{% else %}Delete {{ s.filename }} and its rows from Kiwi?{% endif %}">
+            <input type="hidden" name="_token" value="{{ csrf }}">
+            {% if s.done %}<input type="hidden" name="confirm" value="yes">{% endif %}
+            <button class="btn-link danger" type="submit">Delete</button>
+          </form>
+        </td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+  </div>
+</section>
+{% endif %}
+
+{% if batches %}
+<section aria-labelledby="b-h">
+  <h2 id="b-h">Sent to Tally</h2>
+  <div class="tablewrap">
+  <table class="ledger batches">
+    <thead><tr><th scope="col">When</th><th scope="col">How</th><th scope="col" class="num">Vouchers</th><th scope="col">Result</th><th scope="col"><span class="sr">Actions</span></th></tr></thead>
+    <tbody>
+    {% for b in batches %}
+      <tr>
+        <td class="nowrap">{{ b.created_at }}</td>
+        <td>{{ 'Posted directly' if b.mode == 'tally' else 'XML file' }}</td>
+        <td class="num">{{ b.vouchers }}</td>
+        <td>{% if b.mode == 'tally' %}{{ b.ok }} created{% if b.failed %}, <span class="bad">{{ b.failed }} failed</span>{% endif %}{% else %}{% for f in b.files|fromjson %}<a href="{{ url_for('download_file', cid=c.id, name=f.split('/')[-1].split('\\')[-1]) }}">{{ f.split('/')[-1].split('\\')[-1] }}</a>{% if not loop.last %}, {% endif %}{% endfor %}{% endif %}</td>
+        <td class="rowactions">{% if b.mode == 'xml' %}
+          <form method="post" action="{{ url_for('undo_batch', cid=c.id, bid=b.id) }}" class="inline-form" data-confirm="Mark these rows as not imported, so you can export them again?">
+            <input type="hidden" name="_token" value="{{ csrf }}">
+            <button class="btn-link" type="submit">Import failed? Export again</button>
+          </form>{% endif %}</td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+  </div>
+</section>
+{% endif %}
+{% endblock %}

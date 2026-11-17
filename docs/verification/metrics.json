@@ -1,0 +1,108 @@
+{
+  "verified_local_date": "2026-11-17",
+  "scope": "Linux Mint synthetic tests and disposable Tally company, not a live-client production certification",
+  "pytest": {
+    "name": "pytest",
+    "errors": "0",
+    "failures": "0",
+    "skipped": "0",
+    "tests": "214",
+    "time": "58.974",
+    "timestamp": "2026-11-17T00:04:48.720065+05:30"
+  },
+  "test_cases_by_class": {
+    "tests.test_adapters.AdapterTests": 8,
+    "tests.test_calibration": 8,
+    "tests.test_core.MoneyTests": 10,
+    "tests.test_core.ParserTests": 10,
+    "tests.test_core.WorkflowTests": 29,
+    "tests.test_core.LawTests": 6,
+    "tests.test_core.WebTests": 8,
+    "tests.test_integration_litchi": 14,
+    "tests.test_model_intent_guards": 8,
+    "tests.test_native_tally_exports": 4,
+    "tests.test_parse": 19,
+    "tests.test_service": 14,
+    "tests.test_tally": 10,
+    "tests.test_text": 53,
+    "tests.test_web_and_server": 13
+  },
+  "live_stack_passed": true,
+  "live_stack_checks": 5,
+  "statement_lab": {
+    "passed": 11,
+    "total": 11,
+    "measured_local_date": "2026-10-30",
+    "scanned_narration_exact": 24,
+    "scanned_rows": 47,
+    "photo_narration_exact": 16,
+    "photo_rows": 24
+  },
+  "model_smoke": {
+    "intent_cases": 3,
+    "exact_matches": 2,
+    "warm_intent_median_wall_seconds": 5.4535,
+    "warm_embedding_texts_per_second": 10.479,
+    "caution": "One session and tiny synthetic inputs, no p95/accuracy/overnight or long-input-context claim"
+  },
+  "tally": {
+    "version": "7.2",
+    "mode": "Educational",
+    "wine_runtime": "11.0",
+    "active_vouchers": 10,
+    "cancelled_objects": 3,
+    "original_practice_bank_paise": 960000,
+    "original_practice_cash_paise": 50000,
+    "final_expense_payment_paise": 10225,
+    "two_company_routing": "not run",
+    "native_import_screen": "partial",
+    "exactly_once_posting": "not guaranteed"
+  },
+  "gates_not_measured": [
+    "Independent labelled ledger holdout accuracy and coverage",
+    "100-question bilingual book-intent evaluation",
+    "50-question CA-reviewed legal evaluation",
+    "Planted-error audit precision and recall",
+    "Representative overnight RAM/time acceptance"
+  ],
+  "packaged_source_pytest": {
+    "name": "pytest",
+    "errors": "0",
+    "failures": "0",
+    "skipped": "0",
+    "tests": "214",
+    "time": "70.485",
+    "timestamp": "2026-11-17T00:34:17.463067+05:30"
+  },
+  "browser_checks": {
+    "exact_expense_query_paise": 10225,
+    "expense_vouchers": 3,
+    "actual_model_assisted_receipt_query_paise": 20000,
+    "receipt_vouchers": 1,
+    "law_empty_library_abstention": true,
+    "kiwi_and_litchi_body_font_px": 17,
+    "horizontal_page_overflow_observed": false,
+    "diagonal_nav_arrows_observed": false
+  },
+  "native_dashboard_observed": {
+    "test_bank_paise": 960000,
+    "acceptance_bank_paise": 98075,
+    "cash_paise": 50000,
+    "bank_total_paise": 1058075,
+    "cashflow_in_paise": 1120000,
+    "cashflow_out_paise": 11925,
+    "cashflow_net_paise": 1108075,
+    "net_profit_paise": 9775
+  },
+  "native_bank_reconciliation_summary_observed": {
+    "book_balance_paise": 960000,
+    "expected_bank_balance_paise": 960000,
+    "as_of": "2026-11-02",
+    "unreconciled_rows_visible": 0
+  },
+  "native_connectivity_observed": {
+    "mode": "Both",
+    "odbc": true,
+    "port": 9000
+  }
+}

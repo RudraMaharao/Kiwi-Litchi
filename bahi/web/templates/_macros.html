@@ -1,0 +1,11 @@
+{% macro tabs(c, active) %}
+<nav class="clienttabs" aria-label="{{ c.name }}">
+  {% for key, label, endpoint in [('overview', 'Statements', 'client_page'), ('review', 'Review', 'review'), ('ledgers', 'Ledgers', 'ledgers_page'), ('rules', 'Rules and memory', 'rules_page'), ('settings', 'Client settings', 'client_settings')] %}
+  <a href="{{ url_for(endpoint, cid=c.id) }}"{% if active == key %} aria-current="page"{% endif %}>{{ label }}</a>
+  {% endfor %}
+</nav>
+{% endmacro %}
+
+{% macro check_label(status) -%}
+{{ {'verified': 'Every row matches the running balance', 'partial': 'Some rows need a look', 'unverified': 'No balance column to check against', 'empty': 'No rows'}.get(status, status) }}
+{%- endmacro %}

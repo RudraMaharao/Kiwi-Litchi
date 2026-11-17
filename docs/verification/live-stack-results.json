@@ -1,0 +1,52 @@
+{
+  "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.39",
+  "checks": [
+    {
+      "name": "Linux runtime",
+      "passed": true,
+      "seconds": 0.0,
+      "details": "7.0.0-38-generic"
+    },
+    {
+      "name": "Native sqlite-vec",
+      "passed": true,
+      "seconds": 0.268,
+      "details": "v0.1.9"
+    },
+    {
+      "name": "Real Ollama embeddings",
+      "passed": true,
+      "seconds": 2.11,
+      "details": {
+        "dimensions": 768,
+        "texts": 2
+      }
+    },
+    {
+      "name": "Real Ollama structured intent",
+      "passed": true,
+      "seconds": 10.828,
+      "details": {
+        "ledger": "Mehta Hardware",
+        "measure": "payments",
+        "start": "2026-04-01",
+        "end": "2027-03-31"
+      }
+    },
+    {
+      "name": "Real Qdrant roundtrip",
+      "passed": true,
+      "seconds": 0.656,
+      "details": {
+        "query": "passed",
+        "filter": "passed",
+        "version": "1.20.0"
+      }
+    }
+  ],
+  "models": {
+    "embedding": "nomic-embed-text@0a109f422b47e3a30ba2b10eca18548e944e8a23073ee3f3e947efcf3c45e59f",
+    "intent": "llama3.2:1b-instruct-q4_K_M@22bc6b92eb0160c4629782fca05a9032c59d306ab2058b7dacc8a4644fbafa02"
+  },
+  "passed": true
+}

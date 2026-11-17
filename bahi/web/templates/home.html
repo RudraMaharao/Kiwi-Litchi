@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+{% block title %}Clients | Kiwi{% endblock %}
+{% block content %}
+{% if not rows %}
+<section class="empty">
+  <h1>Bank statements into Tally, checked to the last paisa</h1>
+  <p class="lede">Drop in a client's statement (PDF, Excel, a scan or a photo) · Kiwi reads every row, checks it against the running balance, suggests the ledger and posts the vouchers to Tally · Nothing leaves this computer</p>
+  <form class="addclient" method="post" action="{{ url_for('add_client') }}">
+    <input type="hidden" name="_token" value="{{ csrf }}">
+    <label for="name">Client name</label>
+    <div class="inline">
+      <input id="name" name="name" required autocomplete="off" placeholder="e.g · Sharma Traders">
+      <button class="btn btn-primary" type="submit">Add client</button>
+    </div>
+    <p class="hint">Use the same name as the company in Tally, or set the Tally company later</p>
+  </form>
+  <form method="post" action="{{ url_for('demo') }}" class="demo">
+    <input type="hidden" name="_token" value="{{ csrf }}">
+    <p>Showing someone how it works? <button class="btn-link" type="submit">Load the demo client</button> with a sample April statement</p>
+  </form>
+</section>
+{% else %}
+<div class="pagehead">
+  <div><p class="section-kicker">YOUR WORKSPACE</p><h1>Clients</h1><p class="sub">From the first statement to the final checked entry</p></div>
+  <form class="addclient-inline" method="post" action="{{ url_for('add_client') }}">
+    <input type="hidden" name="_token" value="{{ csrf }}">
+    <label class="sr" for="name">New client name</label>
+    <input id="name" name="name" required autocomplete="off" placeholder="New client name">
+    <button class="btn" type="submit">Add client</button>
+  </form>
+</div>
+{% set totals = namespace(review=0, ready=0, posted=0) %}
+{% for row in rows %}{% set totals.review=totals.review+row.counts.get('review',0) %}{% set totals.ready=totals.ready+row.counts.get('ready',0) %}{% set totals.posted=totals.posted+row.counts.get('posted',0) %}{% endfor %}
+<section class="workspace-stats" aria-label="Workspace totals">
+  <div><span>CLIENTS</span><strong>{{ rows|length }}</strong><p>all in one place</p></div>
+  <div><span>NEEDS REVIEW</span><strong class="review-number">{{ totals.review }}</strong><p>entries waiting for you</p></div>
+  <div><span>READY TO POST</span><strong>{{ totals.ready }}</strong><p>checked and assigned</p></div>
+  <div><span>POSTED TO TALLY</span><strong>{{ totals.posted }}</strong><p>confirmed by Tally</p></div>
+</section>
+{% if rows|length > 6 %}
+<label class="filter"><span class="sr">Find a client</span><input type="search" placeholder="Find a client" data-filter="#clients tbody tr"></label>
+{% endif %}
+<div class="tablewrap">
+<table class="ledger clients" id="clients">
+  <thead><tr><th scope="col">Client</th><th scope="col">Bank accounts</th><th scope="col">Latest statement</th><th scope="col" class="num">Needs review</th><th scope="col" class="num">Ready</th><th scope="col" class="num">Posted / exported</th></tr></thead>
+  <tbody>
+  {% for row in rows %}
+    {% set c = row.c %}
+    <tr>
+      <th scope="row"><a href="{{ url_for('client_page', cid=c.id) }}">{{ c.name }}</a>{% if c.tally_company and c.tally_company != c.name %}<span class="sub">Tally: {{ c.tally_company }}</span>{% endif %}</th>
+      <td>{% for a in row.accounts %}{{ a.label }}{% if not a.tally_ledger %} <span class="tag tag-warn" title="Choose its Tally bank ledger in Client settings">no bank ledger</span>{% endif %}{% if not loop.last %}, {% endif %}{% else %}<span class="muted">None yet</span>{% endfor %}</td>
+      <td>{{ row.last|nice_date if row.last else '' }}</td>
+      <td class="num">{% if row.counts.get('review') %}<a class="count count-review" href="{{ url_for('review', cid=c.id, status='review') }}">{{ row.counts.get('review') }}</a>{% else %}<span class="muted">0</span>{% endif %}</td>
+      <td class="num">{% if row.counts.get('ready') %}<a class="count" href="{{ url_for('review', cid=c.id, status='ready') }}">{{ row.counts.get('ready') }}</a>{% else %}<span class="muted">0</span>{% endif %}</td>
+      <td class="num">{{ (row.counts.get('posted', 0) + row.counts.get('exported', 0)) }}</td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+</div>
+{% endif %}
+{% endblock %}

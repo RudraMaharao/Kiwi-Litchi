@@ -1,0 +1,208 @@
+{
+  "practice_four": {
+    "passed": true,
+    "voucher_count": 4,
+    "balances_paise": {
+      "Kiwi Test Bank": 960000,
+      "Cash": 50000,
+      "Kiwi Test Capital": -1000000,
+      "Kiwi Test Expense": 10000,
+      "Kiwi Test Income": -20000
+    },
+    "allocations": [
+      {
+        "INSTRUMENTNUMBER": "KIWI-PRACTICE-001",
+        "BANKERSDATE": "20261101",
+        "BANKRECONSTATUS": "Reconciled",
+        "TRANSACTIONTYPE": "Others"
+      },
+      {
+        "INSTRUMENTNUMBER": "KIWI-PRACTICE-002",
+        "BANKERSDATE": "20261101",
+        "BANKRECONSTATUS": "Reconciled",
+        "TRANSACTIONTYPE": "Others"
+      },
+      {
+        "INSTRUMENTNUMBER": "KIWI-PRACTICE-003",
+        "BANKERSDATE": "20261102",
+        "BANKRECONSTATUS": "Reconciled",
+        "TRANSACTIONTYPE": "Others"
+      },
+      {
+        "INSTRUMENTNUMBER": "KIWI-PRACTICE-004",
+        "BANKERSDATE": "20261102",
+        "BANKRECONSTATUS": "Reconciled",
+        "TRANSACTIONTYPE": "Others"
+      }
+    ]
+  },
+  "litchi_first_pull": {
+    "Ledger": {
+      "vouchers": 0,
+      "ledgers": 6,
+      "cancelled_or_optional": 0
+    },
+    "Voucher": {
+      "vouchers": 4,
+      "ledgers": 0,
+      "cancelled_or_optional": 0
+    }
+  },
+  "litchi_book_evidence": {
+    "Kiwi Test Capital": {
+      "intent": {
+        "ledger": "Kiwi Test Capital",
+        "measure": "receipts",
+        "start": "2026-11-01",
+        "end": "2026-11-30"
+      },
+      "total_paise": 1000000,
+      "total_rupees": "10000.00",
+      "vouchers": [
+        {
+          "voucher": "tally:2297d91d-1584-4ef5-b5ad-46bf867fd737-00000001",
+          "day": "2026-11-01",
+          "narration": "PRACTICE owner capital introduced",
+          "amount_paise": 1000000
+        }
+      ],
+      "scope": "Imported Receipt vouchers only; unposted statements, journals and other voucher types are excluded."
+    },
+    "Kiwi Test Income": {
+      "intent": {
+        "ledger": "Kiwi Test Income",
+        "measure": "receipts",
+        "start": "2026-11-01",
+        "end": "2026-11-30"
+      },
+      "total_paise": 20000,
+      "total_rupees": "200.00",
+      "vouchers": [
+        {
+          "voucher": "tally:2297d91d-1584-4ef5-b5ad-46bf867fd737-00000003",
+          "day": "2026-11-02",
+          "narration": "PRACTICE customer receipt",
+          "amount_paise": 20000
+        }
+      ],
+      "scope": "Imported Receipt vouchers only; unposted statements, journals and other voucher types are excluded."
+    },
+    "Kiwi Test Expense": {
+      "intent": {
+        "ledger": "Kiwi Test Expense",
+        "measure": "payments",
+        "start": "2026-11-01",
+        "end": "2026-11-30"
+      },
+      "total_paise": 10000,
+      "total_rupees": "100.00",
+      "vouchers": [
+        {
+          "voucher": "tally:2297d91d-1584-4ef5-b5ad-46bf867fd737-00000002",
+          "day": "2026-11-01",
+          "narration": "PRACTICE office supplies",
+          "amount_paise": 10000
+        }
+      ],
+      "scope": "Imported Payment vouchers only; unposted statements, journals and other voucher types are excluded."
+    }
+  },
+  "missing_ledger_creation": {
+    "passed": true,
+    "result": {
+      "batch_id": 2,
+      "posted": 2,
+      "failed": 0,
+      "ledgers_created": [
+        "Kiwi Acceptance Bank",
+        "Kiwi Acceptance Supplier"
+      ],
+      "errors": [],
+      "problems": []
+    },
+    "file_duplicate_blocked": true,
+    "posted_rows_blocked": true
+  },
+  "xml_file_payload_import": {
+    "passed": true,
+    "vouchers": 1,
+    "files": [
+      "<data-dir>/kiwi/data/exports/Kiwi Linux Test/20261116-233852-1-new-ledgers.xml",
+      "<data-dir>/kiwi/data/exports/Kiwi Linux Test/20261116-233852-2-vouchers.xml"
+    ],
+    "native_import_screen": "Not accessible through browser tools; not claimed passed"
+  },
+  "billwise_compatibility": {
+    "passed": true,
+    "amount": "-2.00",
+    "allocations": [
+      "<BILLALLOCATIONS.LIST>\n       <YEAREND />\n       <NAME />\n       <BILLCREDITPERIOD />\n       <TDSDEDUCTEESECTIONNUMBER />\n       <TDSLEDGERNC />\n       <SERVICETAXLEDGER />\n       <BILLTYPE>On Account</BILLTYPE>\n       <SUMNAME />\n       <TDSDEDUCTEEISSPECIALRATE>No</TDSDEDUCTEEISSPECIALRATE>\n       <TDSDEDUCTEESPECIALRATE>0</TDSDEDUCTEESPECIALRATE>\n       <AMOUNT>-2.00</AMOUNT>\n       <INTERESTCOLLECTION.LIST>       </INTERESTCOLLECTION.LIST>\n       <STBILLCATEGORIES.LIST>       </STBILLCATEGORIES.LIST>\n      </BILLALLOCATIONS.LIST>\n      "
+    ],
+    "scope": "Accepted as a party payment; no invoice-reference matching is offered by Kiwi"
+  },
+  "repeated_xml_import": {
+    "investigated": true,
+    "copies": 2,
+    "result": "Unidentified XML imported twice creates duplicates. Never retry an uncertain request blindly."
+  },
+  "before_amend_pull": {
+    "Ledger": {
+      "vouchers": 0,
+      "ledgers": 10,
+      "cancelled_or_optional": 0
+    },
+    "Voucher": {
+      "vouchers": 10,
+      "ledgers": 0,
+      "cancelled_or_optional": 0
+    }
+  },
+  "after_amend_pull": {
+    "Ledger": {
+      "vouchers": 0,
+      "ledgers": 10,
+      "cancelled_or_optional": 0
+    },
+    "Voucher": {
+      "vouchers": 9,
+      "ledgers": 0,
+      "cancelled_or_optional": 3
+    }
+  },
+  "amendment_test_harness_correction": {
+    "initial_error": "Master ID is not the selector name; Tally created an extra amended test object and a cancelled object. All raw responses retained. Corrected to MasterID, verified ALTERED=1 and CREATED=0. Extra payment 11 cancelled; empty object 12 remains cancelled."
+  },
+  "amended_and_cancelled_sync": {
+    "passed": true,
+    "amended_paise": 150,
+    "active_vouchers": 9,
+    "cancelled_export_objects": 3
+  },
+  "repeat_final_pull": {
+    "Ledger": {
+      "vouchers": 0,
+      "ledgers": 10,
+      "cancelled_or_optional": 0
+    },
+    "Voucher": {
+      "vouchers": 9,
+      "ledgers": 0,
+      "cancelled_or_optional": 3
+    }
+  },
+  "full_period_reconciliation": {
+    "passed": true,
+    "active_vouchers": 9,
+    "ledger_totals_paise": {
+      "Kiwi Test Capital": -1100000,
+      "Kiwi Test Bank": 960000,
+      "Kiwi Test Expense": 10150,
+      "Kiwi Acceptance Bank": 98150,
+      "Kiwi Test Income": -20000,
+      "Cash": 50000,
+      "Kiwi Acceptance Supplier": 1000,
+      "Kiwi XML Supplier": 500,
+      "Kiwi Billwise Supplier": 200
+    }
+  }
+}

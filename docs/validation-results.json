@@ -1,0 +1,36 @@
+{
+  "verified_on": "2026-10-30",
+  "platform": "macOS-26.7.1-arm64-arm-64bit-Mach-O",
+  "tests": 202,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "seconds": 17.914,
+  "per_file": {
+    "AdapterTests": 8,
+    "test_calibration": 8,
+    "MoneyTests": 10,
+    "ParserTests": 10,
+    "WorkflowTests": 29,
+    "LawTests": 6,
+    "WebTests": 8,
+    "test_integration_litchi": 14,
+    "test_parse": 19,
+    "test_service": 14,
+    "test_tally": 10,
+    "test_text": 53,
+    "test_web_and_server": 13
+  },
+  "original_tests_unchanged_sha256": {
+    "test_parse.py": "ead56f9fafa17e9cec044ab98295d6be2ab97c2ea8324d994f5b5ed8dc0fb5a0",
+    "test_text.py": "df43edf6a372acd20e9463b4af828669d328b11c88e1e2ce3011f4b5ea5635aa",
+    "test_service.py": "e8783ea9b20d7407425587e5afeaef8bdd11b5c35481f7c050be307c3f0ee0ec",
+    "test_tally.py": "fcb6f1e3e3524f4877488dd7aa2ee204a35318bdea456b82b9f56ced31868301",
+    "test_web_and_server.py": "a748434714ea890f35b1f53ef9a7a8270cf29d31e00466eeb69053c71b32e9bc"
+  },
+  "statement_lab": "11/11 passed; OCR narration is not guaranteed exact",
+  "linux_live_stack": "not run",
+  "real_tally": "not run",
+  "real_law_quality": "not evaluated",
+  "i3_performance": "not measured"
+}

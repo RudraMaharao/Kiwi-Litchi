@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+{% from "_macros.html" import tabs %}
+{% block title %}Settings for {{ c.name }} | Kiwi{% endblock %}
+{% block crumbs %}{% include "_clientnav.html" %}{% endblock %}
+{% block content %}
+<div class="pagehead"><h1>Client settings</h1></div>
+{{ tabs(c, 'settings') }}
+<form class="settings" method="post" action="{{ url_for('client_settings_save', cid=c.id) }}">
+  <input type="hidden" name="_token" value="{{ csrf }}">
+  <fieldset>
+    <legend>Client and Tally company</legend>
+    <label>Client name<input name="name" value="{{ c.name }}" required></label>
+    <label>Tally company
+      <input name="tally_company" value="{{ c.tally_company }}" list="companies" autocomplete="off">
+      <span class="hint">{% if companies %}Open in Tally now: {{ companies|join(', ') }}{% else %}Must match the company name in Tally exactly {{ 'Tally is not reachable right now' if tally_error else '' }}{% endif %}</span>
+    </label>
+    <datalist id="companies">{% for n in companies %}<option value="{{ n }}">{% endfor %}</datalist>
+  </fieldset>
+
+  <fieldset>
+    <legend>Bank accounts</legend>
+    <p class="hint">Each account needs the bank ledger it posts to in Tally{% if not bank_ledgers %} <a href="{{ url_for('ledgers_page', cid=c.id) }}">Fetch ledgers</a> to pick from a list{% endif %}</p>
+    {% for a in accounts %}
+    <div class="accrow">
+      <label>Name in Kiwi<input name="acc_label_{{ a.id }}" value="{{ a.label }}"></label>
+      <label>Tally bank ledger<input name="acc_ledger_{{ a.id }}" value="{{ a.tally_ledger }}" list="bank-ledgers" autocomplete="off"{% if not a.tally_ledger %} aria-describedby="need-{{ a.id }}"{% endif %}></label>
+      <p class="accinfo">{{ a.bank }} {{ a.number }}{% if not a.tally_ledger %} <span class="bad" id="need-{{ a.id }}">needs a bank ledger</span>{% endif %}
+        {% if a.pdf_password %}<label class="check"><input type="checkbox" name="acc_forget_pw_{{ a.id }}"> Forget the saved PDF password</label>{% endif %}</p>
+    </div>
+    {% else %}
+    <p class="muted">Accounts are added when you import a statement, or add one here</p>
+    {% endfor %}
+    <div class="accrow accrow-new">
+      <label>Add an account<input name="new_account" placeholder="e.g · HDFC Current 1234"></label>
+      <label>Tally bank ledger<input name="new_account_ledger" list="bank-ledgers" autocomplete="off"></label>
+    </div>
+    <datalist id="bank-ledgers">{% for n in bank_ledgers %}<option value="{{ n }}">{% endfor %}</datalist>
+  </fieldset>
+
+  <fieldset>
+    <legend>Standard entries</legend>
+    <p class="hint">Ledgers for items every statement has · Leave one empty to send those rows to suspense for review</p>
+    <div class="grid2">
+      <label>Cash<input name="cash_ledger" value="{{ s.cash_ledger }}" list="ledger-list"></label>
+      <label>Suspense (unmatched rows)<input name="suspense_ledger" value="{{ s.suspense_ledger }}" list="ledger-list"></label>
+      {% for key, label, hint in categories %}
+      <label>{{ label }}<input name="cat_{{ key }}" value="{{ s.category_ledgers.get(key, '') }}" list="ledger-list" autocomplete="off"><span class="hint">{{ hint }}</span></label>
+      {% endfor %}
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <legend>Vouchers</legend>
+    <div class="grid3">
+      <label>Payment voucher type<input name="vt_payment" value="{{ s.voucher_types.payment }}"></label>
+      <label>Receipt voucher type<input name="vt_receipt" value="{{ s.voucher_types.receipt }}"></label>
+      <label>Contra voucher type<input name="vt_contra" value="{{ s.voucher_types.contra }}"></label>
+    </div>
+    <div class="radios" role="radiogroup" aria-label="Voucher date">
+      <span>Voucher date</span>
+      <label class="check"><input type="radio" name="date_basis" value="txn"{% if s.date_basis != 'value' %} checked{% endif %}> Transaction date</label>
+      <label class="check"><input type="radio" name="date_basis" value="value"{% if s.date_basis == 'value' %} checked{% endif %}> Value date</label>
+    </div>
+    <label class="check"><input type="checkbox" name="bank_allocations"{% if s.bank_allocations %} checked{% endif %}> Fill in bank details (instrument number and bank date), so these entries show as reconciled in Tally's bank reconciliation</label>
+    <label class="check"><input type="checkbox" name="skip_incoming_own_transfers"{% if s.skip_incoming_own_transfers %} checked{% endif %}> Skip money coming in from the client's own accounts (the Contra is posted from the paying account's statement, so it isn't entered twice)</label>
+  </fieldset>
+  <datalist id="ledger-list">{% for n in ledger_names %}<option value="{{ n }}">{% endfor %}</datalist>
+  <div class="formactions"><button class="btn btn-primary" type="submit">Save settings</button></div>
+</form>
+
+<form class="danger-zone" method="post" action="{{ url_for('client_settings_save', cid=c.id) }}">
+  <input type="hidden" name="_token" value="{{ csrf }}">
+  <input type="hidden" name="action" value="delete_client">
+  <h2>Delete this client</h2>
+  <p>Removes the client's statements, rows, rules and memory from Kiwi · Nothing in Tally changes</p>
+  <label>Type <strong>delete</strong> to confirm<input name="confirm" autocomplete="off"></label>
+  <button class="btn btn-danger" type="submit">Delete {{ c.name }}</button>
+</form>
+{% endblock %}

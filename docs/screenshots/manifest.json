@@ -1,0 +1,160 @@
+{
+  "scope": "Synthetic practice company only",
+  "images": [
+    {
+      "file": "screenshots/01-sign-in.jpg",
+      "kind": "actual browser capture",
+      "sha256": "dee06276c17c5f15a07c4dcb2ae3f494af84c14aea050a957bdb9628499a239c"
+    },
+    {
+      "file": "screenshots/02-kiwi-clients.jpg",
+      "kind": "actual browser capture",
+      "sha256": "35c4a127a256a73b4b56bda05e338c029c35d44e66909e5ad23e20352bd1fe7e"
+    },
+    {
+      "file": "screenshots/03-kiwi-statements.jpg",
+      "kind": "actual browser capture",
+      "sha256": "80261a8827ed4c5c8472a7c79723d746277c2bb3c3a615e381aa105234a1e073"
+    },
+    {
+      "file": "screenshots/04-kiwi-review-posted.jpg",
+      "kind": "actual browser capture",
+      "sha256": "18a94f829a22e2e5c02959639310d19e03e5ca0a2e536bbc1353bdd240e08163"
+    },
+    {
+      "file": "screenshots/05-kiwi-ledgers.jpg",
+      "kind": "actual browser capture",
+      "sha256": "ad1dd6e1c9e6db0bfd5507614bea565da597d7583b181b63d0ccea4544dcbda7"
+    },
+    {
+      "file": "screenshots/05b-kiwi-ledgers-refreshed.jpg",
+      "kind": "actual browser capture",
+      "sha256": "ac4c814529fea439877238070667dfb07b79ce27af1257146192e4d595c0d130"
+    },
+    {
+      "file": "screenshots/06-kiwi-rules-memory.jpg",
+      "kind": "actual browser capture",
+      "sha256": "7b3f4e3f3e7812083a155679650125a1f52eb253aaecb71f6f28bf5f918e87d5"
+    },
+    {
+      "file": "screenshots/07-kiwi-client-settings.jpg",
+      "kind": "actual browser capture",
+      "sha256": "5807bfb88b4c10b22ed4d425bbfd217de20f342104b0bcefe4645b5101c4bf0d"
+    },
+    {
+      "file": "screenshots/08-litchi-overview.jpg",
+      "kind": "actual browser capture",
+      "sha256": "0fd6c8d40e7639fcafcd4199ddfb13407064bef582057eb621efb20ddb5fc3da"
+    },
+    {
+      "file": "screenshots/08a-litchi-overview-viewport.jpg",
+      "kind": "actual browser capture",
+      "sha256": "fb90fb42167f8ed52e18cd9b316330d2841afe4f32a8149a219795ec9def96c9"
+    },
+    {
+      "file": "screenshots/09-litchi-ledger-predictions.jpg",
+      "kind": "actual browser capture",
+      "sha256": "840a4ba3979cf74f54b0132dcccb958499be8345367a7796644b0085e723564e"
+    },
+    {
+      "file": "screenshots/10-litchi-book-query-form.jpg",
+      "kind": "actual browser capture",
+      "sha256": "4402b04e47dab9d6f54571c15659b4b14530c4b4e58ac1ea3bbe379423189a51"
+    },
+    {
+      "file": "screenshots/11-litchi-exact-total-evidence.jpg",
+      "kind": "actual browser capture",
+      "sha256": "906da12c87268ce3301a6e9a03bce4b3bffd66fcf3120b21287ad331f7c5c7b0"
+    },
+    {
+      "file": "screenshots/12-litchi-local-model-query.jpg",
+      "kind": "actual browser capture",
+      "sha256": "96d398b9a6289e52a9207881d5a23b928ec86e39a16b514ebfabdca9ad1bf080"
+    },
+    {
+      "file": "screenshots/13-litchi-local-model-result.jpg",
+      "kind": "actual browser capture",
+      "sha256": "96d398b9a6289e52a9207881d5a23b928ec86e39a16b514ebfabdca9ad1bf080"
+    },
+    {
+      "file": "screenshots/14-litchi-audit-before.jpg",
+      "kind": "actual browser capture",
+      "sha256": "2622c9f4a12e43cc481f8f0bc97824139faf06e5d8cd9b1a5c900769dcbc314b"
+    },
+    {
+      "file": "screenshots/15-litchi-audit-results.jpg",
+      "kind": "actual browser capture",
+      "sha256": "b25f5a13acae60557f78f2eed1ad40e0aa998751ffb91138e894a13b52c30a3b"
+    },
+    {
+      "file": "screenshots/16-litchi-law-search.jpg",
+      "kind": "actual browser capture",
+      "sha256": "53a4074b17094d22068ae43c4174bc28e7a71a91faa487ea53e9bee4cc415f16"
+    },
+    {
+      "file": "screenshots/17-litchi-empty-law-abstention.jpg",
+      "kind": "actual browser capture",
+      "sha256": "25719bcb0e55969f1da1b0fa44ff17d7213a3776c83517665b88d98fa2900315"
+    },
+    {
+      "file": "screenshots/18-litchi-ledgers-rules.jpg",
+      "kind": "actual browser capture",
+      "sha256": "2f47ef5f9b4f3d837e9f368db3ce4056dedeb65a807b4454bbb95bcdad68e98b"
+    },
+    {
+      "file": "screenshots/19-litchi-model-receipt-result.jpg",
+      "kind": "actual browser capture",
+      "sha256": "cbe24eb602cadefb63af5a97e920d36a87bd51bf9f1ad0bd0c5706951bac344f"
+    },
+    {
+      "file": "screenshots/history/first-four-posted-before-theme-update.jpg",
+      "kind": "historical browser capture",
+      "sha256": "e5f89bfcf47f389fa2b897ef7171eb837eb5ddf6d0b2c9310de995e6b4200099"
+    },
+    {
+      "file": "screenshots/tallyprime/01-company.png",
+      "kind": "native Tally screenshot supplied by user",
+      "sha256": "c4bd656c959b62123b035c3bf4817afb38ab796bd0a71b72bd3594407b84f2fa"
+    },
+    {
+      "file": "screenshots/tallyprime/02-dashboard-with-balances.png",
+      "kind": "native Tally screenshot supplied by user",
+      "sha256": "ac75ba7cd8a2dfb01c6f467173b6350acd386b691a5494272c5d7fec46c805b6"
+    },
+    {
+      "file": "screenshots/tallyprime/03-chart-of-accounts-assets.png",
+      "kind": "native Tally screenshot supplied by user",
+      "sha256": "9c777b565191c14ee5c37a5b23cec256f38ab75461210f2aac467080402890d5"
+    },
+    {
+      "file": "screenshots/tallyprime/04-chart-of-accounts-expenses.png",
+      "kind": "native Tally screenshot supplied by user",
+      "sha256": "2622bdc8a8278b09a7eca8429230bbf1cfa02e52200c6625d2eae55e932b2dd8"
+    },
+    {
+      "file": "screenshots/tallyprime/05-day-book-with-cancellations.png",
+      "kind": "native Tally screenshot supplied by user",
+      "sha256": "e68d003f045cc680f8c8ce1439d5361244c74592c188ca23ee7278586e5d0ef1"
+    },
+    {
+      "file": "screenshots/tallyprime/06-payment-voucher-100.png",
+      "kind": "native Tally screenshot supplied by user",
+      "sha256": "342c14efdb98531f012058c7d1b1b7afd036473c46aa08dd0400e29293f05d88"
+    },
+    {
+      "file": "screenshots/tallyprime/07-bank-reconciliation-summary.png",
+      "kind": "native Tally screenshot supplied by user",
+      "sha256": "8eb580ba8b8dd9996620f05257f836083780a9d8b0e936873a78d079b21b89da"
+    },
+    {
+      "file": "screenshots/tallyprime/08-billwise-supplier-payment.png",
+      "kind": "native Tally screenshot supplied by user",
+      "sha256": "a7c2bf4cb9ac1097776ca1d74d1eb63523120b06d4a202bc5554bcb4843a360c"
+    },
+    {
+      "file": "screenshots/tallyprime/09-connectivity-port-9000.png",
+      "kind": "native Tally screenshot supplied by user",
+      "sha256": "b7a7880e419129525c1667e421af272471c743ae3a9b3bc9baa1b305df79d7cd"
+    }
+  ]
+}

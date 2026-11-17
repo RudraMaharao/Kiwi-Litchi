@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %}Settings | Kiwi{% endblock %}
+{% block content %}
+<div class="pagehead"><h1>Settings</h1></div>
+<section aria-labelledby="t-h">
+  <h2 id="t-h">Tally connection</h2>
+  <dl class="facts">
+    <div><dt>Address</dt><dd>{{ cfg.tally.host }}:{{ cfg.tally.port }}</dd></div>
+    <div><dt>Status</dt><dd>{{ tally_state }}</dd></div>
+    {% if companies %}<div><dt>Companies open</dt><dd>{{ companies|join(', ') }}</dd></div>{% endif %}
+  </dl>
+  <p class="hint">In TallyPrime: F1 Help, then Settings, then Connectivity · Set <em>TallyPrime acts as</em> to Server (or Both) and the port to {{ cfg.tally.port }} · Keep the client's company open while posting</p>
+</section>
+<section aria-labelledby="o-h">
+  <h2 id="o-h">Reading scans and photos</h2>
+  <p>{% if ocr_ok %}Ready: {{ ocr_version }}.{% else %}Tesseract isn't installed, so scanned PDFs and photos can't be read · Text PDFs and Excel files work without it · See the README for the two-minute install.{% endif %}</p>
+</section>
+<section aria-labelledby="d-h">
+  <h2 id="d-h">This installation</h2>
+  <dl class="facts">
+    <div><dt>Version</dt><dd>Kiwi {{ version }}</dd></div>
+    <div><dt>Data folder</dt><dd><code>{{ cfg.home }}</code></dd></div>
+    <div><dt>Settings file</dt><dd><code>{{ cfg.home / 'bahi.toml' }}</code></dd></div>
+    <div><dt>Open to</dt><dd>{{ 'This computer only' if cfg.server.host in ('127.0.0.1', 'localhost') else 'Other devices on the network (password protected)' }}</dd></div>
+    <div><dt>Test mode</dt><dd>{{ 'On: dates move to the 1st, 2nd or 31st' if cfg.tally.edu_mode else 'Off' }}</dd></div>
+  </dl>
+  <p class="hint">Change these in <code>bahi.toml</code> and restart Kiwi · Back up the data folder to keep every client's history</p>
+</section>
+{% endblock %}

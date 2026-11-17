@@ -1,0 +1,397 @@
+{
+ "opening": 31000000,
+ "closing": 22527467,
+ "rows": [
+  {
+   "date": "2026-04-02",
+   "value_date": "2026-04-02",
+   "narration": "NEFT-PUNBN67975987471076-R K DISTRIBUTORS-/FAST///",
+   "ref": "",
+   "amount": 19241500,
+   "direction": "credit",
+   "balance": 50241500,
+   "kind": "neft_in"
+  },
+  {
+   "date": "2026-04-03",
+   "value_date": "2026-04-03",
+   "narration": "INF/NEFT/308752797019/UTIB0000123/AMBIKA STEEL PVT LTD",
+   "ref": "",
+   "amount": 10277600,
+   "direction": "debit",
+   "balance": 39963900,
+   "kind": "neft_out"
+  },
+  {
+   "date": "2026-04-06",
+   "value_date": "2026-04-07",
+   "narration": "NEFT-UTIBN86479760655212-PATIL CONSTRUCTIONS PVT LTD-/FAST///",
+   "ref": "",
+   "amount": 8832800,
+   "direction": "credit",
+   "balance": 48796700,
+   "kind": "neft_in"
+  },
+  {
+   "date": "2026-04-06",
+   "value_date": "2026-04-06",
+   "narration": "UPI/925665598003/Pay/bpclfuel@icici/BHARAT PETROLEUM",
+   "ref": "925665598003",
+   "amount": 343240,
+   "direction": "debit",
+   "balance": 48453460,
+   "kind": "upi_out"
+  },
+  {
+   "date": "2026-04-08",
+   "value_date": "2026-04-08",
+   "narration": "UPI/191333911096/Payment/rkdist@okaxis/R K DISTRIBUTORS",
+   "ref": "191333911096",
+   "amount": 1821700,
+   "direction": "credit",
+   "balance": 50275160,
+   "kind": "upi_in"
+  },
+  {
+   "date": "2026-04-09",
+   "value_date": "2026-04-09",
+   "narration": "INF/NEFT/601270093831/SBIN0007721/BALAJI PACKAGING",
+   "ref": "",
+   "amount": 977700,
+   "direction": "debit",
+   "balance": 49297460,
+   "kind": "neft_out"
+  },
+  {
+   "date": "2026-04-10",
+   "value_date": "2026-04-10",
+   "narration": "INF/NEFT/000749558251/HDFC0000045/OM SAI TRANSPORT",
+   "ref": "",
+   "amount": 13885700,
+   "direction": "debit",
+   "balance": 35411760,
+   "kind": "neft_out"
+  },
+  {
+   "date": "2026-04-10",
+   "value_date": "2026-04-10",
+   "narration": "UPI/832412682278/Pay/swiggy.stores@axb/SWIGGY",
+   "ref": "832412682278",
+   "amount": 479705,
+   "direction": "debit",
+   "balance": 34932055,
+   "kind": "upi_out"
+  },
+  {
+   "date": "2026-04-10",
+   "value_date": "2026-04-10",
+   "narration": "UPI/000125254349/Payment/shreeganesh@ybl/SHREE GANESH TRADERS",
+   "ref": "000125254349",
+   "amount": 4238900,
+   "direction": "credit",
+   "balance": 39170955,
+   "kind": "upi_in"
+  },
+  {
+   "date": "2026-04-11",
+   "value_date": "2026-04-11",
+   "narration": "NFS/CASH WDL/042605/MUMBAI/11-04-26",
+   "ref": "",
+   "amount": 800000,
+   "direction": "debit",
+   "balance": 38370955,
+   "kind": "atm"
+  },
+  {
+   "date": "2026-04-14",
+   "value_date": "2026-04-14",
+   "narration": "UPI/282691973364/Pay/suresh.k@oksbi/SURESH KUMAR",
+   "ref": "282691973364",
+   "amount": 51380,
+   "direction": "debit",
+   "balance": 38319575,
+   "kind": "upi_out"
+  },
+  {
+   "date": "2026-04-14",
+   "value_date": "2026-04-14",
+   "narration": "INF/NEFT/396776157243/ICIC0006612/JAIN HARDWARE STORES",
+   "ref": "",
+   "amount": 8963300,
+   "direction": "debit",
+   "balance": 29356275,
+   "kind": "neft_out"
+  },
+  {
+   "date": "2026-04-15",
+   "value_date": "2026-04-15",
+   "narration": "NEFT-SBINN65726231286298-SHREE GANESH TRADERS-/FAST///",
+   "ref": "",
+   "amount": 5798300,
+   "direction": "credit",
+   "balance": 35154575,
+   "kind": "neft_in"
+  },
+  {
+   "date": "2026-04-16",
+   "value_date": "2026-04-16",
+   "narration": "BIL/INFT/198760917/Own transfer/SHARMA TRADERS",
+   "ref": "",
+   "amount": 7717000,
+   "direction": "debit",
+   "balance": 27437575,
+   "kind": "self_out"
+  },
+  {
+   "date": "2026-04-16",
+   "value_date": "2026-04-17",
+   "narration": "NEFT-ICICN27404434703496-MEHTA AND SONS-/FAST///",
+   "ref": "",
+   "amount": 1867000,
+   "direction": "credit",
+   "balance": 29304575,
+   "kind": "neft_in"
+  },
+  {
+   "date": "2026-04-16",
+   "value_date": "2026-04-16",
+   "narration": "INF/NEFT/130653849954/HDFC0000045/OM SAI TRANSPORT",
+   "ref": "",
+   "amount": 10402800,
+   "direction": "debit",
+   "balance": 18901775,
+   "kind": "neft_out"
+  },
+  {
+   "date": "2026-04-17",
+   "value_date": "2026-04-17",
+   "narration": "UPI/830406855168/Payment/shreeganesh@ybl/SHREE GANESH TRADERS",
+   "ref": "830406855168",
+   "amount": 801400,
+   "direction": "credit",
+   "balance": 19703175,
+   "kind": "upi_in"
+  },
+  {
+   "date": "2026-04-17",
+   "value_date": "2026-04-17",
+   "narration": "MMT/IMPS/309088714741/PRIYA NAIR/SBIN0001234",
+   "ref": "",
+   "amount": 934400,
+   "direction": "debit",
+   "balance": 18768775,
+   "kind": "imps_out"
+  },
+  {
+   "date": "2026-04-17",
+   "value_date": "2026-04-17",
+   "narration": "INF/NEFT/242275544459/ICIC0006612/JAIN HARDWARE STORES",
+   "ref": "",
+   "amount": 5501400,
+   "direction": "debit",
+   "balance": 13267375,
+   "kind": "neft_out"
+  },
+  {
+   "date": "2026-04-17",
+   "value_date": "2026-04-18",
+   "narration": "BY CASH-ANDHERI EAST",
+   "ref": "",
+   "amount": 4379300,
+   "direction": "credit",
+   "balance": 17646675,
+   "kind": "cash_dep"
+  },
+  {
+   "date": "2026-04-18",
+   "value_date": "2026-04-19",
+   "narration": "NFS/CASH WDL/227263/MUMBAI/18-04-26",
+   "ref": "",
+   "amount": 850000,
+   "direction": "debit",
+   "balance": 16796675,
+   "kind": "atm"
+  },
+  {
+   "date": "2026-04-19",
+   "value_date": "2026-04-19",
+   "narration": "UPI/993258495752/Pay/rahulv@okicici/RAHUL VERMA",
+   "ref": "993258495752",
+   "amount": 521757,
+   "direction": "debit",
+   "balance": 16274918,
+   "kind": "upi_out"
+  },
+  {
+   "date": "2026-04-20",
+   "value_date": "2026-04-21",
+   "narration": "UPI/022868179309/Pay/swiggy.stores@axb/SWIGGY",
+   "ref": "022868179309",
+   "amount": 94884,
+   "direction": "debit",
+   "balance": 16180034,
+   "kind": "upi_out"
+  },
+  {
+   "date": "2026-04-20",
+   "value_date": "2026-04-20",
+   "narration": "UPI/085071322745/Payment/krishnaent@paytm/KRISHNA ENTERPRISES",
+   "ref": "085071322745",
+   "amount": 2875800,
+   "direction": "credit",
+   "balance": 19055834,
+   "kind": "upi_in"
+  },
+  {
+   "date": "2026-04-21",
+   "value_date": "2026-04-21",
+   "narration": "NFS/CASH WDL/315832/MUMBAI/21-04-26",
+   "ref": "",
+   "amount": 1000000,
+   "direction": "debit",
+   "balance": 18055834,
+   "kind": "atm"
+  },
+  {
+   "date": "2026-04-21",
+   "value_date": "2026-04-21",
+   "narration": "UPI/546588013524/Pay/relianceretail@ybl/RELIANCE RETAIL",
+   "ref": "546588013524",
+   "amount": 525750,
+   "direction": "debit",
+   "balance": 17530084,
+   "kind": "upi_out"
+  },
+  {
+   "date": "2026-04-21",
+   "value_date": "2026-04-21",
+   "narration": "UPI/562808910686/Payment/guptaelec@okhdfcbank/GUPTA ELECTRICALS",
+   "ref": "562808910686",
+   "amount": 756900,
+   "direction": "credit",
+   "balance": 18286984,
+   "kind": "upi_in"
+  },
+  {
+   "date": "2026-04-21",
+   "value_date": "2026-04-21",
+   "narration": "UPI/381856210484/Pay/bpclfuel@icici/BHARAT PETROLEUM",
+   "ref": "381856210484",
+   "amount": 390638,
+   "direction": "debit",
+   "balance": 17896346,
+   "kind": "upi_out"
+  },
+  {
+   "date": "2026-04-22",
+   "value_date": "2026-04-22",
+   "narration": "UPI/767647136986/Payment/rkdist@okaxis/R K DISTRIBUTORS",
+   "ref": "767647136986",
+   "amount": 1191300,
+   "direction": "credit",
+   "balance": 19087646,
+   "kind": "upi_in"
+  },
+  {
+   "date": "2026-04-22",
+   "value_date": "2026-04-22",
+   "narration": "UPI/285565941445/Pay/suresh.k@oksbi/SURESH KUMAR",
+   "ref": "285565941445",
+   "amount": 396979,
+   "direction": "debit",
+   "balance": 18690667,
+   "kind": "upi_out"
+  },
+  {
+   "date": "2026-04-22",
+   "value_date": "2026-04-22",
+   "narration": "INF/NEFT/906833881382/HDFC0000045/OM SAI TRANSPORT",
+   "ref": "",
+   "amount": 5656500,
+   "direction": "debit",
+   "balance": 13034167,
+   "kind": "neft_out"
+  },
+  {
+   "date": "2026-04-24",
+   "value_date": "2026-04-24",
+   "narration": "UPI/449320695692/Payment/rkdist@okaxis/R K DISTRIBUTORS",
+   "ref": "449320695692",
+   "amount": 3712300,
+   "direction": "credit",
+   "balance": 16746467,
+   "kind": "upi_in"
+  },
+  {
+   "date": "2026-04-24",
+   "value_date": "2026-04-25",
+   "narration": "UPI/079251532795/Payment/guptaelec@okhdfcbank/GUPTA ELECTRICALS",
+   "ref": "079251532795",
+   "amount": 2500000,
+   "direction": "credit",
+   "balance": 19246467,
+   "kind": "upi_in"
+  },
+  {
+   "date": "2026-04-27",
+   "value_date": "2026-04-27",
+   "narration": "CLG/JAIN HARDWARE STORES/448282",
+   "ref": "448282",
+   "amount": 733400,
+   "direction": "debit",
+   "balance": 18513067,
+   "kind": "chq_out"
+  },
+  {
+   "date": "2026-04-27",
+   "value_date": "2026-04-27",
+   "narration": "NEFT-ICICN85276207042517-MEHTA AND SONS-/FAST///",
+   "ref": "",
+   "amount": 5145100,
+   "direction": "credit",
+   "balance": 23658167,
+   "kind": "neft_in"
+  },
+  {
+   "date": "2026-04-27",
+   "value_date": "2026-04-27",
+   "narration": "MMT/IMPS/121171525072/SURESH KUMAR/SBIN0001234",
+   "ref": "",
+   "amount": 770300,
+   "direction": "debit",
+   "balance": 22887867,
+   "kind": "imps_out"
+  },
+  {
+   "date": "2026-04-28",
+   "value_date": "2026-04-28",
+   "narration": "UPI/869291487277/Pay/suresh.k@oksbi/SURESH KUMAR",
+   "ref": "869291487277",
+   "amount": 152185,
+   "direction": "debit",
+   "balance": 22735682,
+   "kind": "upi_out"
+  },
+  {
+   "date": "2026-04-28",
+   "value_date": "2026-04-28",
+   "narration": "UPI/172936548638/Pay/airtel.payments@axisbank/AIRTEL",
+   "ref": "172936548638",
+   "amount": 394332,
+   "direction": "debit",
+   "balance": 22341350,
+   "kind": "upi_out"
+  },
+  {
+   "date": "2026-04-29",
+   "value_date": "2026-04-29",
+   "narration": "Int.Pd:01-04-2026 to 29-04-2026",
+   "ref": "",
+   "amount": 186117,
+   "direction": "credit",
+   "balance": 22527467,
+   "kind": "interest"
+  }
+ ],
+ "no_opening": true
+}

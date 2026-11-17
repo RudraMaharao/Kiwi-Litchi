@@ -1,0 +1,476 @@
+{
+ "opening": 24531055,
+ "closing": 31786091,
+ "rows": [
+  {
+   "date": "2026-04-01",
+   "value_date": "2026-04-01",
+   "narration": "UPI-SHREE GANESH TRADERS-shreeganesh@ybl-UTIB0000123-100772837832-PAYMENT FROM PHONE",
+   "ref": "100772837832",
+   "amount": 932000,
+   "direction": "credit",
+   "balance": 25463055,
+   "kind": "upi_in"
+  },
+  {
+   "date": "2026-04-02",
+   "value_date": "2026-04-02",
+   "narration": "GST PAYMENT CPIN 66304940326991 CBIC",
+   "ref": "",
+   "amount": 1563500,
+   "direction": "debit",
+   "balance": 23899555,
+   "kind": "gst"
+  },
+  {
+   "date": "2026-04-02",
+   "value_date": "2026-04-02",
+   "narration": "NEFT DR-SBIN0007721-BALAJI PACKAGING-NETBANK, MUM-N740954611139-INV 751",
+   "ref": "N740954611139",
+   "amount": 4636700,
+   "direction": "debit",
+   "balance": 19262855,
+   "kind": "neft_out"
+  },
+  {
+   "date": "2026-04-02",
+   "value_date": "2026-04-02",
+   "narration": "ACH D- BAJAJ FINANCE LTD-CITI0000000123",
+   "ref": "",
+   "amount": 1250000,
+   "direction": "debit",
+   "balance": 18012855,
+   "kind": "emi"
+  },
+  {
+   "date": "2026-04-03",
+   "value_date": "2026-04-03",
+   "narration": "UPI-AMAZON PAY-amazonpay@apl-SBIN0000456-979262243933-PAY",
+   "ref": "979262243933",
+   "amount": 397759,
+   "direction": "debit",
+   "balance": 17615096,
+   "kind": "upi_out"
+  },
+  {
+   "date": "2026-04-03",
+   "value_date": "2026-04-03",
+   "narration": "NEFT CR-SBIN0004431-SHREE GANESH TRADERS-SHARMA TRADERS-SBINN67916011084364",
+   "ref": "SBINN67916011084364",
+   "amount": 16020900,
+   "direction": "credit",
+   "balance": 33635996,
+   "kind": "neft_in"
+  },
+  {
+   "date": "2026-04-04",
+   "value_date": "2026-04-05",
+   "narration": "NEFT DR-ICIC0006612-JAIN HARDWARE STORES-NETBANK, MUM-N482123789914-INV 317",
+   "ref": "N482123789914",
+   "amount": 16436000,
+   "direction": "debit",
+   "balance": 17199996,
+   "kind": "neft_out"
+  },
+  {
+   "date": "2026-04-05",
+   "value_date": "2026-04-06",
+   "narration": "IMPS-014673002458-AJAY SINGH-HDFC-XXXXXXXX4411-SALARY",
+   "ref": "",
+   "amount": 2134100,
+   "direction": "debit",
+   "balance": 15065896,
+   "kind": "salary"
+  },
+  {
+   "date": "2026-04-06",
+   "value_date": "2026-04-06",
+   "narration": "UPI-GUPTA ELECTRICALS-guptaelec@okhdfcbank-YESB0000123-790966909111-PAYMENT FROM PHONE",
+   "ref": "790966909111",
+   "amount": 2783800,
+   "direction": "credit",
+   "balance": 17849696,
+   "kind": "upi_in"
+  },
+  {
+   "date": "2026-04-06",
+   "value_date": "2026-04-06",
+   "narration": "UPI-KRISHNA ENTERPRISES-krishnaent@paytm-KKBK0000123-569777818804-PAYMENT FROM PHONE",
+   "ref": "569777818804",
+   "amount": 1735600,
+   "direction": "credit",
+   "balance": 19585296,
+   "kind": "upi_in"
+  },
+  {
+   "date": "2026-04-06",
+   "value_date": "2026-04-06",
+   "narration": "GST PAYMENT CPIN 31797405429382 CBIC",
+   "ref": "",
+   "amount": 946000,
+   "direction": "debit",
+   "balance": 18639296,
+   "kind": "gst"
+  },
+  {
+   "date": "2026-04-07",
+   "value_date": "2026-04-07",
+   "narration": "NEFT CR-PUNB0123400-R K DISTRIBUTORS-SHARMA TRADERS-PUNBN77356436336395",
+   "ref": "PUNBN77356436336395",
+   "amount": 10479000,
+   "direction": "credit",
+   "balance": 29118296,
+   "kind": "neft_in"
+  },
+  {
+   "date": "2026-04-07",
+   "value_date": "2026-04-07",
+   "narration": "CHQ PAID-MICR CTS-MU-JAIN HARDWARE STORES",
+   "ref": "467782",
+   "amount": 2263600,
+   "direction": "debit",
+   "balance": 26854696,
+   "kind": "chq_out"
+  },
+  {
+   "date": "2026-04-08",
+   "value_date": "2026-04-08",
+   "narration": "UPI-GUPTA ELECTRICALS-guptaelec@okhdfcbank-YESB0000123-421774366875-PAYMENT FROM PHONE",
+   "ref": "421774366875",
+   "amount": 315800,
+   "direction": "credit",
+   "balance": 27170496,
+   "kind": "upi_in"
+  },
+  {
+   "date": "2026-04-10",
+   "value_date": "2026-04-10",
+   "narration": "NEFT CR-UTIB0000917-PATIL CONSTRUCTIONS PVT LTD-SHARMA TRADERS-UTIBN51049049549026",
+   "ref": "UTIBN51049049549026",
+   "amount": 17878100,
+   "direction": "credit",
+   "balance": 45048596,
+   "kind": "neft_in"
+  },
+  {
+   "date": "2026-04-13",
+   "value_date": "2026-04-13",
+   "narration": "NEFT DR-HDFC0000045-OM SAI TRANSPORT-NETBANK, MUM-N320171851337-INV 362",
+   "ref": "N320171851337",
+   "amount": 1448100,
+   "direction": "debit",
+   "balance": 43600496,
+   "kind": "neft_out"
+  },
+  {
+   "date": "2026-04-15",
+   "value_date": "2026-04-15",
+   "narration": "NEFT CR-UTIB0000917-PATIL CONSTRUCTIONS PVT LTD-SHARMA TRADERS-UTIBN80234588892631",
+   "ref": "UTIBN80234588892631",
+   "amount": 1782200,
+   "direction": "credit",
+   "balance": 45382696,
+   "kind": "neft_in"
+  },
+  {
+   "date": "2026-04-15",
+   "value_date": "2026-04-16",
+   "narration": "IB FUNDS TRANSFER DR-50100099887766-SHARMA TRADERS",
+   "ref": "",
+   "amount": 7585200,
+   "direction": "debit",
+   "balance": 37797496,
+   "kind": "self_out"
+  },
+  {
+   "date": "2026-04-15",
+   "value_date": "2026-04-15",
+   "narration": "NEFT DR-HDFC0000045-OM SAI TRANSPORT-NETBANK, MUM-N058107586470-INV 323",
+   "ref": "N058107586470",
+   "amount": 9198900,
+   "direction": "debit",
+   "balance": 28598596,
+   "kind": "neft_out"
+  },
+  {
+   "date": "2026-04-15",
+   "value_date": "2026-04-15",
+   "narration": "UPI-KRISHNA ENTERPRISES-krishnaent@paytm-YESB0000123-028527288779-PAYMENT FROM PHONE",
+   "ref": "028527288779",
+   "amount": 469800,
+   "direction": "credit",
+   "balance": 29068396,
+   "kind": "upi_in"
+  },
+  {
+   "date": "2026-04-15",
+   "value_date": "2026-04-15",
+   "narration": "UPI-KRISHNA ENTERPRISES-krishnaent@paytm-SBIN0000123-884828884469-PAYMENT FROM PHONE",
+   "ref": "884828884469",
+   "amount": 1501000,
+   "direction": "credit",
+   "balance": 30569396,
+   "kind": "upi_in"
+  },
+  {
+   "date": "2026-04-16",
+   "value_date": "2026-04-17",
+   "narration": "UPI-SURESH KUMAR-suresh.k@oksbi-KKBK0000456-497368180960-PAY",
+   "ref": "497368180960",
+   "amount": 156006,
+   "direction": "debit",
+   "balance": 30413390,
+   "kind": "upi_out"
+  },
+  {
+   "date": "2026-04-17",
+   "value_date": "2026-04-18",
+   "narration": "CASH DEP ANDHERI EAST",
+   "ref": "",
+   "amount": 3881700,
+   "direction": "credit",
+   "balance": 34295090,
+   "kind": "cash_dep"
+  },
+  {
+   "date": "2026-04-17",
+   "value_date": "2026-04-17",
+   "narration": "UPI-SURESH KUMAR-suresh.k@oksbi-UTIB0000456-171218766437-PAY",
+   "ref": "171218766437",
+   "amount": 578421,
+   "direction": "debit",
+   "balance": 33716669,
+   "kind": "upi_out"
+  },
+  {
+   "date": "2026-04-17",
+   "value_date": "2026-04-17",
+   "narration": "NEFT DR-ICIC0006612-JAIN HARDWARE STORES-NETBANK, MUM-N851369042003-INV 259",
+   "ref": "N851369042003",
+   "amount": 12168500,
+   "direction": "debit",
+   "balance": 21548169,
+   "kind": "neft_out"
+  },
+  {
+   "date": "2026-04-18",
+   "value_date": "2026-04-18",
+   "narration": "ATW-512345XXXXXX6276-S1ANMU55-MUMBAI",
+   "ref": "",
+   "amount": 650000,
+   "direction": "debit",
+   "balance": 20898169,
+   "kind": "atm"
+  },
+  {
+   "date": "2026-04-18",
+   "value_date": "2026-04-18",
+   "narration": "UPI-KRISHNA ENTERPRISES-krishnaent@paytm-SBIN0000123-892838383899-PAYMENT FROM PHONE",
+   "ref": "892838383899",
+   "amount": 4198400,
+   "direction": "credit",
+   "balance": 25096569,
+   "kind": "upi_in"
+  },
+  {
+   "date": "2026-04-19",
+   "value_date": "2026-04-19",
+   "narration": "UPI-MEHTA AND SONS-mehtasons@oksbi-ICIC0000123-259533312321-PAYMENT FROM PHONE",
+   "ref": "259533312321",
+   "amount": 4164900,
+   "direction": "credit",
+   "balance": 29261469,
+   "kind": "upi_in"
+  },
+  {
+   "date": "2026-04-20",
+   "value_date": "2026-04-20",
+   "narration": "UPI-KRISHNA ENTERPRISES-krishnaent@paytm-YESB0000123-823601395518-PAYMENT FROM PHONE",
+   "ref": "823601395518",
+   "amount": 2899400,
+   "direction": "credit",
+   "balance": 32160869,
+   "kind": "upi_in"
+  },
+  {
+   "date": "2026-04-20",
+   "value_date": "2026-04-20",
+   "narration": "UPI-RAHUL VERMA-rahulv@okicici-SBIN0000456-171008989723-PAY",
+   "ref": "171008989723",
+   "amount": 535208,
+   "direction": "debit",
+   "balance": 31625661,
+   "kind": "upi_out"
+  },
+  {
+   "date": "2026-04-20",
+   "value_date": "2026-04-20",
+   "narration": "UPI-PRIYA NAIR-priyanair@ybl-ICIC0000456-190271156768-PAY",
+   "ref": "190271156768",
+   "amount": 188870,
+   "direction": "debit",
+   "balance": 31436791,
+   "kind": "upi_out"
+  },
+  {
+   "date": "2026-04-20",
+   "value_date": "2026-04-20",
+   "narration": "UPI-MEHTA AND SONS-mehtasons@oksbi-HDFC0000123-003267556392-PAYMENT FROM PHONE",
+   "ref": "003267556392",
+   "amount": 3988200,
+   "direction": "credit",
+   "balance": 35424991,
+   "kind": "upi_in"
+  },
+  {
+   "date": "2026-04-21",
+   "value_date": "2026-04-22",
+   "narration": "NEFT DR-HDFC0000101-ANITA DESAI-NETBANK, MUM-N051699389544-RENT",
+   "ref": "",
+   "amount": 3500000,
+   "direction": "debit",
+   "balance": 31924991,
+   "kind": "rent"
+  },
+  {
+   "date": "2026-04-21",
+   "value_date": "2026-04-21",
+   "narration": "ATW-512345XXXXXX2959-S1ANMU60-MUMBAI",
+   "ref": "",
+   "amount": 500000,
+   "direction": "debit",
+   "balance": 31424991,
+   "kind": "atm"
+  },
+  {
+   "date": "2026-04-21",
+   "value_date": "2026-04-21",
+   "narration": "CASH DEP ANDHERI EAST",
+   "ref": "",
+   "amount": 2144200,
+   "direction": "credit",
+   "balance": 33569191,
+   "kind": "cash_dep"
+  },
+  {
+   "date": "2026-04-21",
+   "value_date": "2026-04-21",
+   "narration": "CHQ PAID-MICR CTS-MU-JAIN HARDWARE STORES",
+   "ref": "645967",
+   "amount": 4967500,
+   "direction": "debit",
+   "balance": 28601691,
+   "kind": "chq_out"
+  },
+  {
+   "date": "2026-04-23",
+   "value_date": "2026-04-23",
+   "narration": "UPI-KRISHNA ENTERPRISES-krishnaent@paytm-KKBK0000123-189062672789-PAYMENT FROM PHONE",
+   "ref": "189062672789",
+   "amount": 702900,
+   "direction": "credit",
+   "balance": 29304591,
+   "kind": "upi_in"
+  },
+  {
+   "date": "2026-04-24",
+   "value_date": "2026-04-24",
+   "narration": "UPI-RELIANCE RETAIL-relianceretail@ybl-HDFC0000456-694584748440-PAY",
+   "ref": "694584748440",
+   "amount": 526555,
+   "direction": "debit",
+   "balance": 28778036,
+   "kind": "upi_out"
+  },
+  {
+   "date": "2026-04-25",
+   "value_date": "2026-04-26",
+   "narration": "NEFT CR-HDFC0001882-GUPTA ELECTRICALS-SHARMA TRADERS-HDFCN26605609513674",
+   "ref": "HDFCN26605609513674",
+   "amount": 16856600,
+   "direction": "credit",
+   "balance": 45634636,
+   "kind": "neft_in"
+  },
+  {
+   "date": "2026-04-26",
+   "value_date": "2026-04-26",
+   "narration": "IMPS-817239109671-RAHUL VERMA-SBIN-XXXXXXXX4336-ADVANCE",
+   "ref": "817239109671",
+   "amount": 898500,
+   "direction": "debit",
+   "balance": 44736136,
+   "kind": "imps_out"
+  },
+  {
+   "date": "2026-04-26",
+   "value_date": "2026-04-26",
+   "narration": "UPI-GUPTA ELECTRICALS-guptaelec@okhdfcbank-ICIC0000123-572679496582-PAYMENT FROM PHONE",
+   "ref": "572679496582",
+   "amount": 1064000,
+   "direction": "credit",
+   "balance": 45800136,
+   "kind": "upi_in"
+  },
+  {
+   "date": "2026-04-26",
+   "value_date": "2026-04-26",
+   "narration": "NEFT DR-ICIC0006612-JAIN HARDWARE STORES-NETBANK, MUM-N184895449993-INV 748",
+   "ref": "N184895449993",
+   "amount": 7049800,
+   "direction": "debit",
+   "balance": 38750336,
+   "kind": "neft_out"
+  },
+  {
+   "date": "2026-04-27",
+   "value_date": "2026-04-27",
+   "narration": "IMPS-383000446090-RAHUL VERMA-SBIN-XXXXXXXX2678-ADVANCE",
+   "ref": "383000446090",
+   "amount": 884500,
+   "direction": "debit",
+   "balance": 37865836,
+   "kind": "imps_out"
+  },
+  {
+   "date": "2026-04-28",
+   "value_date": "2026-04-28",
+   "narration": "UPI-GUPTA ELECTRICALS-guptaelec@okhdfcbank-HDFC0000123-283577535572-PAYMENT FROM PHONE",
+   "ref": "283577535572",
+   "amount": 525000,
+   "direction": "credit",
+   "balance": 38390836,
+   "kind": "upi_in"
+  },
+  {
+   "date": "2026-04-28",
+   "value_date": "2026-04-28",
+   "narration": "CHQ PAID-MICR CTS-MU-BALAJI PACKAGING",
+   "ref": "565922",
+   "amount": 6362900,
+   "direction": "debit",
+   "balance": 32027936,
+   "kind": "chq_out"
+  },
+  {
+   "date": "2026-04-28",
+   "value_date": "2026-04-28",
+   "narration": "UPI-AMAZON PAY-amazonpay@apl-ICIC0000456-529548265917-PAY",
+   "ref": "529548265917",
+   "amount": 278608,
+   "direction": "debit",
+   "balance": 31749328,
+   "kind": "upi_out"
+  },
+  {
+   "date": "2026-04-29",
+   "value_date": "2026-04-29",
+   "narration": "CREDIT INTEREST CAPITALISED",
+   "ref": "",
+   "amount": 36763,
+   "direction": "credit",
+   "balance": 31786091,
+   "kind": "interest"
+  }
+ ]
+}

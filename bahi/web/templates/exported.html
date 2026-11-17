@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}Tally XML for {{ c.name }} | Kiwi{% endblock %}
+{% block crumbs %}{% include "_clientnav.html" %}{% endblock %}
+{% block content %}
+<div class="pagehead"><h1>{{ out.vouchers }} voucher{{ '' if out.vouchers == 1 else 's' }} ready to import</h1></div>
+<section>
+  <h2>Download</h2>
+  <ul class="files">
+    {% for f in files %}<li><a class="btn" href="{{ url_for('download_file', cid=c.id, name=f) }}" download>{{ f }}</a></li>{% endfor %}
+  </ul>
+  <h2>Import into TallyPrime</h2>
+  <ol class="steps">
+    <li>Open the company <strong>{{ c.tally_company or c.name }}</strong> in TallyPrime</li>
+    {% if out.new_ledgers %}
+    <li>Press <kbd>Alt</kbd>+<kbd>O</kbd> (Import), choose <strong>Masters</strong>, and import the <em>new-ledgers</em> file · It creates {{ out.new_ledgers|length }} ledger{{ '' if out.new_ledgers|length == 1 else 's' }}: {{ out.new_ledgers.keys()|list|join(', ') }}</li>
+    {% endif %}
+    <li>Press <kbd>Alt</kbd>+<kbd>O</kbd> again, choose <strong>Transactions</strong>, enter the path of the <em>vouchers</em> file, and press <kbd>Enter</kbd></li>
+    <li>Tally shows how many vouchers it created · If it reports errors, come back and use <em>Import failed? Export again</em> on the client page</li>
+  </ol>
+  <p><a href="{{ url_for('client_page', cid=c.id) }}">Back to {{ c.name }}</a></p>
+</section>
+{% endblock %}

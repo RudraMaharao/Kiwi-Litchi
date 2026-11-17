@@ -1,0 +1,109 @@
+{% extends "base.html" %}
+{% from "_macros.html" import tabs %}
+{% block title %}Review {{ c.name }} | Kiwi{% endblock %}
+{% block crumbs %}{% include "_clientnav.html" %}{% endblock %}
+{% block mainclass %}page page-wide{% endblock %}
+{% block content %}
+<div class="pagehead">
+  <div><p class="section-kicker">STATEMENT WORKSPACE</p><h1>Review entries</h1><p class="sub">Check the details · Give every entry the right home</p></div>
+  <form class="pickstatement" method="get" action="{{ url_for('review', cid=c.id) }}">
+    <label for="statement">Statement</label>
+    <select id="statement" name="statement" data-autosubmit>
+      <option value="">All statements</option>
+      {% for s in statements %}<option value="{{ s.id }}"{% if stmt and stmt.id == s.id %} selected{% endif %}>{{ s.period_from|nice_date }} to {{ s.period_to|nice_date }}, {{ s.account_label }}</option>{% endfor %}
+    </select>
+    <noscript><button class="btn" type="submit">Show</button></noscript>
+  </form>
+</div>
+{{ tabs(c, 'review') }}
+
+{% if proof %}
+<section class="proof proof-{{ proof.status }}" aria-labelledby="proof-h">
+  <h2 id="proof-h" class="sr">Balance check</h2>
+  <div class="proof-sum">
+    <div class="pl"><span>Opening balance</span><span class="num">{{ proof.opening|inr if proof.opening is not none else 'not printed' }}</span></div>
+    <div class="pl"><span>Money in, {{ proof.n_cr }} credit{{ '' if proof.n_cr == 1 else 's' }}</span><span class="num">+&#8239;{{ proof.cr|inr }}</span></div>
+    <div class="pl"><span>Money out, {{ proof.n_dr }} debit{{ '' if proof.n_dr == 1 else 's' }}</span><span class="num">&minus;&#8239;{{ proof.dr|inr }}</span></div>
+    <div class="pl total"><span>Closing balance</span><span class="num">{{ proof.computed|inr if proof.computed is not none else proof.closing|inr }}</span></div>
+  </div>
+  <div class="proof-verdict">
+    {% if proof.status == 'verified' %}
+      <p class="verdict">Matches the statement{% if proof.printed_closing is not none %}'s closing balance of {{ proof.printed_closing|inr }}{% endif %}</p>
+      <p>Every row agrees with the running balance · Review the narration and ledger before posting</p>
+    {% elif proof.status == 'unverified' %}
+      <p class="verdict">Nothing to check against</p>
+      <p>This statement has no balance column · Check the totals against the bank's figures</p>
+    {% else %}
+      <p class="verdict">{{ proof.flagged }} row{{ '' if proof.flagged == 1 else 's' }} need{{ 's' if proof.flagged == 1 else '' }} a look</p>
+      {% for w in proof.warnings %}<p>{{ w }}</p>{% endfor %}
+    {% endif %}
+  </div>
+</section>
+{% endif %}
+
+<nav class="statustabs" aria-label="Show rows">
+  {% for key, label in status_tabs %}
+    {% if counts.get(key) or key in ('review', 'ready', 'all') %}
+    <a href="{{ url_for('review', cid=c.id, status=key, statement=stmt.id if stmt else None) }}"{% if status == key %} aria-current="page"{% endif %} class="st-{{ key }}">{{ label }} <span class="n">{{ counts.get(key, 0) }}</span></a>
+    {% endif %}
+  {% endfor %}
+</nav>
+
+<div class="toolbar" data-toolbar>
+  <label class="filter"><span class="sr">Search these rows</span><input type="search" placeholder="Search narration, party, ledger or amount" data-filter="#rows tbody tr" data-search-key></label>
+  <div class="bulk" data-bulk hidden>
+    <span data-bulk-count>0 selected</span>
+    <label class="sr" for="bulk-ledger">Ledger for the selected rows</label>
+    <input id="bulk-ledger" list="ledger-list" placeholder="Ledger for selected rows" autocomplete="off" spellcheck="false">
+    <button class="btn btn-small" type="button" data-bulk-set>Set ledger</button>
+    <button class="btn btn-small" type="button" data-bulk-action="approve">Approve</button>
+    <button class="btn-link" type="button" data-bulk-action="skip">Skip</button>
+  </div>
+  <details class="keys">
+    <summary>Keyboard</summary>
+    <p><kbd>↑</kbd> <kbd>↓</kbd> move, <kbd>Enter</kbd> edit the ledger, <kbd>A</kbd> approve, <kbd>S</kbd> skip, <kbd>X</kbd> select, <kbd>/</kbd> search</p>
+  </details>
+</div>
+
+{% if rows %}
+<div class="tablewrap">
+<table class="ledger review" id="rows" data-cid="{{ c.id }}">
+  <thead>
+    <tr>
+      <th scope="col" class="sel"><input type="checkbox" aria-label="Select all shown rows" data-select-all></th>
+      <th scope="col" class="date">Date</th>
+      <th scope="col">Narration</th>
+      <th scope="col" class="num">Debit</th>
+      <th scope="col" class="num">Credit</th>
+      <th scope="col" class="num">Balance</th>
+      <th scope="col" class="led">Ledger</th>
+      <th scope="col" class="act"><span class="sr">Status</span></th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for r in rows %}{% include "_row.html" %}{% endfor %}
+  </tbody>
+</table>
+</div>
+{% else %}
+<div class="emptyrows">
+  {% if status == 'review' %}<p>Nothing needs review here {% if counts.get('ready') %}<a href="{{ url_for('review', cid=c.id, status='ready', statement=stmt.id if stmt else None) }}">See the {{ counts.get('ready') }} ready rows</a>{% endif %}</p>
+  {% else %}<p>No rows here</p>{% endif %}
+</div>
+{% endif %}
+
+<datalist id="ledger-list">{% for n in ledger_names %}<option value="{{ n }}">{% endfor %}</datalist>
+
+<div class="actionbar" data-actionbar>
+  <p><strong data-ready-count>{{ plan.specs|length }}</strong> row{{ '' if plan.specs|length == 1 else 's' }} ready for Tally{% if plan.new_ledgers %}, with {{ plan.new_ledgers|length }} new ledger{{ '' if plan.new_ledgers|length == 1 else 's' }} to create{% endif %}{% for p in plan.problems %} · <span class="bad">{{ p }}</span>{% endfor %}</p>
+  <div class="actions">
+    <a class="btn btn-quiet" href="{{ url_for('excel', cid=c.id, statement=stmt.id if stmt else None) }}">Excel</a>
+    <form method="post" action="{{ url_for('export_xml', cid=c.id) }}" class="inline-form">
+      <input type="hidden" name="_token" value="{{ csrf }}">
+      <button class="btn" type="submit"{% if not plan.specs %} disabled{% endif %}>Download Tally XML</button>
+    </form>
+    <button class="btn btn-primary" type="button" data-post-tally="{{ url_for('post_tally', cid=c.id) }}" data-count="{{ plan.specs|length }}"{% if not plan.specs %} disabled{% endif %}>Post to Tally</button>
+  </div>
+  <div id="post-status" class="jobstatus" aria-live="polite"></div>
+</div>
+{% endblock %}

@@ -1,0 +1,5 @@
+<nav class="crumbs" aria-label="Where you are">
+  <a href="{{ url_for('home') }}">Clients</a>
+  <span aria-hidden="true">/</span>
+  <a href="{{ url_for('client_page', cid=c.id) }}" class="crumb-client">{{ c.name }}</a>
+</nav>

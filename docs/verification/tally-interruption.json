@@ -1,0 +1,35 @@
+{
+  "investigated": true,
+  "real_tally_committed": true,
+  "client_timed_out": true,
+  "copies_after_timeout": 1,
+  "automatic_retry_attempted": false,
+  "known_limitation": "Kiwi leaves a timed-out row ready; a blind retry can duplicate it",
+  "resolution": "Read actual Tally export, verified one matching payment, marked only this test row posted",
+  "kiwi_row": 55,
+  "result": {
+    "batch_id": 4,
+    "posted": 0,
+    "failed": 1,
+    "ledgers_created": [],
+    "errors": [
+      [
+        55,
+        "Tally didn't answer in time (timed out)."
+      ]
+    ],
+    "problems": []
+  },
+  "litchi_pull": {
+    "Ledger": {
+      "vouchers": 0,
+      "ledgers": 10,
+      "cancelled_or_optional": 0
+    },
+    "Voucher": {
+      "vouchers": 10,
+      "ledgers": 0,
+      "cancelled_or_optional": 3
+    }
+  }
+}

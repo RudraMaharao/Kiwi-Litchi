@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% from "_macros.html" import tabs %}
+{% block title %}Rules for {{ c.name }} | Kiwi{% endblock %}
+{% block crumbs %}{% include "_clientnav.html" %}{% endblock %}
+{% block content %}
+<div class="pagehead"><h1>Rules and memory</h1></div>
+{{ tabs(c, 'rules') }}
+<section aria-labelledby="r-h">
+  <h2 id="r-h">Rules</h2>
+  <p>A rule wins over everything else · Use one when the same words in a narration always mean the same ledger</p>
+  <form class="ruleform" method="post" action="{{ url_for('rules_action', cid=c.id) }}">
+    <input type="hidden" name="_token" value="{{ csrf }}">
+    <input type="hidden" name="action" value="add">
+    <label>When the narration contains<input name="pattern" required placeholder="SWIGGY" autocomplete="off"></label>
+    <label>and the money goes
+      <select name="direction"><option value="any">in or out</option><option value="debit">out</option><option value="credit">in</option></select>
+    </label>
+    <label>use the ledger<input name="ledger" list="ledger-list" required placeholder="Staff Welfare" autocomplete="off"></label>
+    <label>for
+      <select name="scope"><option value="client">this client</option><option value="all">every client</option></select>
+    </label>
+    <button class="btn btn-primary" type="submit">Add rule</button>
+  </form>
+  <p class="hint">Start the words with <code>re:</code> to use a regular expression, for example <code>re:^ACH.*LIC</code></p>
+  {% if rules %}
+  <div class="tablewrap">
+  <table class="ledger">
+    <thead><tr><th scope="col">Narration contains</th><th scope="col">Money</th><th scope="col">Ledger</th><th scope="col">For</th><th scope="col"><span class="sr">Actions</span></th></tr></thead>
+    <tbody>
+    {% for r in rules %}
+      <tr><td><code>{{ r.pattern }}</code></td><td>{{ {'any': 'in or out', 'debit': 'out', 'credit': 'in'}[r.direction] }}</td><td>{{ r.ledger }}</td><td>{{ 'every client' if r.client_id is none else 'this client' }}</td>
+        <td class="rowactions"><form method="post" action="{{ url_for('rules_action', cid=c.id) }}" class="inline-form"><input type="hidden" name="_token" value="{{ csrf }}"><input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="{{ r.id }}"><button class="btn-link danger" type="submit">Delete</button></form></td></tr>
+    {% endfor %}
+    </tbody>
+  </table>
+  </div>
+  {% endif %}
+</section>
+<section aria-labelledby="m-h">
+  <h2 id="m-h">What Kiwi has learned</h2>
+  <p>Each time you set a ledger, Kiwi remembers it for that UPI ID or party and fills it in next month</p>
+  {% if memory %}
+  <label class="filter"><span class="sr">Find</span><input type="search" placeholder="Find a party or ledger" data-filter="#memory tbody tr"></label>
+  <div class="tablewrap">
+  <table class="ledger" id="memory">
+    <thead><tr><th scope="col">Party or UPI ID</th><th scope="col">Ledger</th><th scope="col" class="num">Used</th><th scope="col">Last set</th><th scope="col"><span class="sr">Actions</span></th></tr></thead>
+    <tbody>
+    {% for m in memory %}
+      {% set kind, _, value = m.key.partition(':') %}
+      <tr><td>{{ value }} <span class="muted">{{ {'vpa': 'UPI ID', 'party': 'party', 'text': 'narration'}.get(kind, kind) }}</span></td><td>{{ m.ledger }}</td><td class="num">{{ m.hits }}</td><td class="nowrap">{{ m.updated_at[:10]|nice_date }}</td>
+        <td class="rowactions"><form method="post" action="{{ url_for('rules_action', cid=c.id) }}" class="inline-form"><input type="hidden" name="_token" value="{{ csrf }}"><input type="hidden" name="action" value="forget"><input type="hidden" name="key" value="{{ m.key }}"><button class="btn-link danger" type="submit">Forget</button></form></td></tr>
+    {% endfor %}
+    </tbody>
+  </table>
+  </div>
+  {% else %}<p class="muted">Nothing yet · Set a ledger on the Review page and it appears here</p>{% endif %}
+</section>
+<datalist id="ledger-list">{% for n in ledger_names %}<option value="{{ n }}">{% endfor %}</datalist>
+{% endblock %}

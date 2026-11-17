@@ -1,0 +1,37 @@
+# Runtime and credentials — never upload these with a public repo
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+build/
+dist/
+.env
+.env.*
+!.env.example
+*.db
+*.db-*
+*.sqlite*
+auth.json
+.secret
+*.pem
+*.key
+bahi.toml
+data/
+backups/
+clients/
+inbox/
+reports/
+.ollama/
+.aws/
+.codex/
+.agents/
+.DS_Store
+Thumbs.db
+# Generated local test output remains outside the curated verification evidence
+/installed-versions.txt
+/model-smoke-benchmark.json
+/statement-lab.html
+
+# macOS resource forks
+._*
