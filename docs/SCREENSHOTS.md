@@ -31,7 +31,6 @@ The intentional timeout probe appears as a failed HTTP response in batch history
 | [17-litchi-empty-law-abstention.jpg](screenshots/17-litchi-empty-law-abstention.jpg) | Empty-library abstention, no invented legal answer |
 | [18-litchi-ledgers-rules.jpg](screenshots/18-litchi-ledgers-rules.jpg) | Litchi ledger and rule controls |
 | [19-litchi-model-receipt-result.jpg](screenshots/19-litchi-model-receipt-result.jpg) | Actual model-assisted receipt query, ₹200.00 and one voucher |
-| [history/first-four-posted-before-theme-update.jpg](screenshots/history/first-four-posted-before-theme-update.jpg) | first four posted before theme update |
 | [tallyprime/01-company.png](screenshots/tallyprime/01-company.png) | Tally company and Educational Mode, initial April-only view |
 | [tallyprime/02-dashboard-with-balances.png](screenshots/tallyprime/02-dashboard-with-balances.png) | Tally dashboard through 2 November, bank and cash balances |
 | [tallyprime/03-chart-of-accounts-assets.png](screenshots/tallyprime/03-chart-of-accounts-assets.png) | Tally bank, capital and supplier master groups |
@@ -53,5 +52,3 @@ All seven requested native stages are represented, including extra dashboard and
 Full-page captures include the page below the fold — click an image in the offline gallery for its full resolution
 
 [Offline gallery](screenshots/index.html) · [Metrics](METRICS-AND-EVALUATIONS.md) · [Model specs](MODEL-SPECS.md)
-
-The supplied historical UI images remain in [kiwi-review.png](kiwi-review.png) and [litchi-dashboard.png](litchi-dashboard.png) and do not represent the final palette

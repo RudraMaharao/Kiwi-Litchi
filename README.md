@@ -106,7 +106,7 @@ No new licence is asserted over the supplied application code · model weights a
 
 ## Full screenshot walkthrough
 
-All 31 supplied workflow captures are embedded here, including nine native TallyPrime screenshots from the disposable practice company. Earlier upload/approval clicks were not photographed and have not been reconstructed. Click an image to inspect it at full resolution.
+All 30 current workflow captures are embedded here, including nine native TallyPrime screenshots from the disposable practice company. Earlier upload/approval clicks were not photographed and have not been reconstructed. Click an image to inspect it at full resolution.
 
 ### Kiwi: sign-in, clients, statements and review
 
@@ -195,12 +195,6 @@ All 31 supplied workflow captures are embedded here, including nine native Tally
 **Actual model-assisted receipt query, ₹200.00 and one voucher**
 
 ![Actual model-assisted receipt query, ₹200.00 and one voucher](docs/screenshots/19-litchi-model-receipt-result.jpg)
-
-### Historical practice capture
-
-**first four posted before theme update**
-
-![first four posted before theme update](docs/screenshots/history/first-four-posted-before-theme-update.jpg)
 
 ### TallyPrime: native company, vouchers and reconciliation
 

@@ -91,6 +91,6 @@ See [OPERATIONS.md](OPERATIONS.md) for logs, watch folders, backups and restore.
 
 ## Screens
 
-![Kiwi review](kiwi-review.png)
+![Kiwi review](screenshots/04-kiwi-review-posted.jpg)
 
-![Litchi dashboard](litchi-dashboard.png)
+![Litchi dashboard](screenshots/08a-litchi-overview-viewport.jpg)

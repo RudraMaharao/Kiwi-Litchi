@@ -107,11 +107,6 @@
       "sha256": "cbe24eb602cadefb63af5a97e920d36a87bd51bf9f1ad0bd0c5706951bac344f"
     },
     {
-      "file": "screenshots/history/first-four-posted-before-theme-update.jpg",
-      "kind": "historical browser capture",
-      "sha256": "e5f89bfcf47f389fa2b897ef7171eb837eb5ddf6d0b2c9310de995e6b4200099"
-    },
-    {
       "file": "screenshots/tallyprime/01-company.png",
       "kind": "native Tally screenshot supplied by user",
       "sha256": "c4bd656c959b62123b035c3bf4817afb38ab796bd0a71b72bd3594407b84f2fa"
